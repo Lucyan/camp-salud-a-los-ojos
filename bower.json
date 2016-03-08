@@ -1,0 +1,31 @@
+{
+  "name": "Salud a los Ojos",
+  "description": "Campanario - Salud a los Ojos",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "frontend/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "bootstrap": "*",
+    "angular": "~1.3.15",
+    "angular-route": "~1.3.15",
+    "angulartics": "~0.17.2",
+    "angular-bootstrap": "*",
+    "ngprogress": "*",
+    "animate.css": "*",
+    "font-awesome": "~4.3.0"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": "~2.1.3"
+  }
+}
