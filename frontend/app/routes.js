@@ -1,4 +1,4 @@
-quickSurvey.config(function ($routeProvider){
+saludalosojos.config(function ($routeProvider){
 
   $routeProvider
   .when('/',

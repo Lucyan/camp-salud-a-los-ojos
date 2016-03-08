@@ -1,10 +1,10 @@
-quickSurvey.controller("homeController", function ($scope, $rootScope, User) {
+saludalosojos.controller("homeController", function ($scope, $rootScope) {
 
   $scope.anglum = {
     url   : 'http://wikot.io/anglum',
-    title : 'Quick Survey'
+    title : 'Salud a los Ojos'
   };
 
-  $scope.message = 'Encuestas flash para la comunidad.';
+  $scope.message = 'Campanario.';
 
 });

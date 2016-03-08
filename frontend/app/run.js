@@ -1,4 +1,4 @@
-quickSurvey.run(function (){
+saludalosojos.run(function (){
 
   /**
   window.fbAsyncInit = function() {

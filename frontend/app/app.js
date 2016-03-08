@@ -1,11 +1,11 @@
 'use strict';
 
-var quickSurvey = angular.module("quickSurveyApp",["ngRoute","satellizer","ui.bootstrap", "ngFileUpload", "ngProgress"]);
+var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap", "ngProgress"]);
 
 /**
  *  Main App Controller
  **/
 
-quickSurvey.controller('quickSurveyController', ['$scope', function ($scope) {
+saludalosojos.controller('mainController', ['$scope', function ($scope) {
 
 }]);
