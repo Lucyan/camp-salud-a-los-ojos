@@ -1,0 +1,47 @@
+body {
+	background: #000;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-family: 'Gotham';
+}
+
+.view {
+	position: relative;
+}
+
+/*BG video*/
+
+.bg-video {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.bg-video * {
+	width: 100%;
+}
+
+.bg-video .filter {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+}
+
+
+/* Footer */
+
+#site-footer {
+	background: url(../img/footer/footer.png);
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 20%;
+}

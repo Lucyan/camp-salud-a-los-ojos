@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-    <title>Quick Survey</title>
+    <title>Campanario - Salud a los ojos</title>
 
     <!-- Bootstrap for Angular -->
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -25,6 +25,10 @@
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <!-- / FontAwesome -->
 
+    <!-- Fonts -->
+    <link href="lib/fonts/stylesheet.css" rel="stylesheet" />
+    <!-- / Fonts -->
+
     <!-- Application Styles -->
     <link href="css/style.css" rel="stylesheet">
     <!-- / Application Styles -->
@@ -38,8 +42,18 @@
     <!-- <div ng-include="'app/controllers/menu/template.html'" id="container-menu"></div> -->
 
     <div id="content">
-      <div ng-view></div>
+      <div class="bg-video">
+        <img src="img/bg-women.png" />
+
+        <div class="filter">
+        </div>
+      </div>
+      <div class="view">
+        <div ng-view></div>
+      </div>
     </div>
+
+    <footer id="site-footer"></footer>
 
     <!-- <footer ng-include="'app/controllers/footer/template.html'"></footer> -->
 
@@ -75,6 +89,7 @@
 
     <!-- Modules -->
     <script src="app/modules/home/homeController.js"></script>
+    <script src="app/modules/agegate/agegateController.js"></script>
     <!-- <script src="app/modules/example/exampleController.js"></script> -->
     <!-- / Modules -->
 

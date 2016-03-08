@@ -3,6 +3,10 @@ saludalosojos.config(function ($routeProvider){
   $routeProvider
   .when('/',
   {
+    templateUrl: 'app/modules/agegate/agegate.template.html'
+  })
+  .when('/home',
+  {
     templateUrl: 'app/modules/home/home.template.html',
     controller: 'homeController'
   })
