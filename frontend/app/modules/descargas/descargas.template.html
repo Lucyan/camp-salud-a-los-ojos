@@ -1,0 +1,24 @@
+<div id="descargas" class="text-center">
+	<div>
+		<ul id="menu-descargas">
+			<li ng-click="option_active = 'smart'" ng-switch on="option_active">
+				<img ng-switch-when="smart" src="img/descargas/menu/smart-on.png" />
+				<img ng-switch-default src="img/descargas/menu/smart-off.png" />
+			</li>
+			<li ng-click="option_active = 'note'" ng-switch on="option_active">
+				<img ng-switch-when="note" src="img/descargas/menu/note-on.png" />
+				<img ng-switch-default src="img/descargas/menu/note-off.png" />
+			</li>
+			<li ng-click="option_active = 'calendar'" ng-switch on="option_active">
+				<img ng-switch-when="calendar" src="img/descargas/menu/calendar-on.png" />
+				<img ng-switch-default src="img/descargas/menu/calendar-off.png" />
+			</li>
+			<div style="clear:both"></div>
+		</ul>
+	</div>
+
+	<div ng-switch on="option_active" id="descargas-content" class="text-center">
+		<div ng-switch-when="note" class="animate-descargas"><div class="include-content" ng-include="'app/modules/descargas/note.template.html'" ></div></div>
+		<div ng-switch-default class="animate-descargas"><div class="include-content" ng-include="'app/modules/descargas/smart.template.html'" ></div></div>
+	</div>
+</div>

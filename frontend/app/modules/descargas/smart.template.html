@@ -1,0 +1,29 @@
+<div class="celular" ng-init="loadSmart();">
+	<div class="mascara">
+		<div class="list-content" ng-style="{'width': objWidht}">
+			<ul ng-style="{'width': ulWidht, 'margin-left': (page - 1) * objWidht * -1}">
+				<li ng-repeat="imagen in imageList track by $index">
+					<img ng-src="{{imagen.url}}">
+				</li>
+			</ul>
+		</div>
+		<img src="img/descargas/smart/phone.png" class="phone">
+	</div>
+	<div class="control text-left">
+		<img src="img/descargas/left.png" ng-click="prevPage();" ng-disabled="page < 2">
+		<img src="img/descargas/right.png" class="pull-right" ng-click="nextPage();" ng-disabled="page >= imageList.length">
+	</div>
+	<div class="paging">
+		<img ng-repeat="n in range(1, imageList.length)" src="img/descargas/pin.png" ng-class="{active: n == page}" ng-click="goPage(n)">
+	</div>
+</div>
+
+<div id="smart-download" class="text-left">
+	<p>
+		Descarga los wallpapers<br/>
+		de nuestras chicas para<br/>
+		tu celular.
+	</p>
+	<img src="img/descargas/linea.png" class="linea">
+	<a class="btn pull-right" ng-href="{{imageList[page].url}}" target="_blank" download="{{imageList[page].name}}">Descargar Wallpaper</a>
+</div>

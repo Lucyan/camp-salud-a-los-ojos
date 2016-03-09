@@ -13,9 +13,10 @@ saludalosojos.config(['$routeProvider', '$locationProvider', function ($routePro
 		templateUrl: 'app/modules/home/home.template.html',
 		controller: 'homeController'
 	})
-	.when('/static-page',
+	.when('/descargas',
 	{
-		templateUrl: 'app/modules/staticPage/staticPage.template.html'
+		templateUrl: 'app/modules/descargas/descargas.template.html',
+		controller: 'descargas.controller'
 	})
 	.when('/404',
 	{
