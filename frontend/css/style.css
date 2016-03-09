@@ -39,6 +39,17 @@ html, body {
 	left: 0px;
 	top: 0px;
 	height: 100%;
+	animation-name: bgchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgchange {
+	0% {background: rgba(255,74,53,0.75);}
+	25% {background: rgba(255,190,65,0.75);}
+	50% {background: rgba(197,214,62,0.75);}
+	75% {background: rgba(210,53,69,0.75);}
+	100% {background: rgba(255,74,53,0.75);}
 }
 
 
