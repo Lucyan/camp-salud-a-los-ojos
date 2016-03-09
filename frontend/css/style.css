@@ -67,6 +67,22 @@ a:hover, a:active, a:visited {
 }
 
 
+/* Animations enter & leave */
+
+.ng-enter {
+	-webkit-animation: bounceInDown 1s;
+	-moz-animation: bounceInDown 1s;
+	-ms-animation: bounceInDown 1s;
+	animation: bounceInDown 1s;
+}
+
+.ng-leave {
+	-webkit-animation: bounceOutUp 1s;
+	-moz-animation: bounceOutUp 1s;
+	-ms-animation: bounceOutUp 1s;
+	animation: bounceOutUp 1s;
+}
+
 
 /*BG video*/
 
