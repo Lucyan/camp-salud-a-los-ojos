@@ -20,6 +20,54 @@ html, body {
 	position: relative;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+.hexagon {
+	position: relative;
+	width: 26px; 
+	height: 15.01px;
+	background-color: transparent;
+	margin: 7.51px 0;
+	border-left: solid 1px #ffffff;
+	border-right: solid 1px #ffffff;
+}
+
+.hexagon:before,
+.hexagon:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 18.38px;
+	height: 18.38px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 2.8076px;
+}
+
+.hexagon:before {
+	top: -9.1924px;
+	border-top: solid 1.4142px #ffffff;
+	border-right: solid 1.4142px #ffffff;
+}
+
+.hexagon:after {
+	bottom: -9.1924px;
+	border-bottom: solid 1.4142px #ffffff;
+	border-left: solid 1.4142px #ffffff;
+}
+
+
+
 /*BG video*/
 
 .bg-video {
@@ -77,11 +125,6 @@ html, body {
 	font-size: 10px;
 }
 
-#site-footer a {
-	text-decoration: none;
-	color: #fff;
-}
-
 #site-footer .row > div {
 	display: inline-block;
 	line-height: 3;
@@ -89,4 +132,54 @@ html, body {
 
 #site-footer .home, #site-footer .home a {
 	color: #D61E19;
+}
+
+/* Menú */
+
+#menu {
+	position: fixed;
+	top: 40px;
+	left: 40px;
+	z-index: 99999;
+}
+
+#menu ul {
+	list-style: none;
+	margin-top: 30px;
+	padding-left: 20px;
+	margin-left: -20px;
+}
+
+#menu ul li {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+#menu ul li:hover:before {
+	display: block;
+	position: absolute;
+	content: "|";
+	top: 0px;
+	left: -10px;
+	color: #fff;
+}
+
+#menu .redes {
+	margin-top: 40px;
+}
+
+#menu .redes > a {
+	margin-right: 10px;
+	padding-left: 8px;
+	padding-right: 1px;
+	padding-top: 2px;
+	font-size: 14px;
+}
+
+#menu .redes > a.twitter {
+	padding-left: 6px;
+}
+
+#menu .redes > a.facebook {
+	padding-right: 8px;
 }
