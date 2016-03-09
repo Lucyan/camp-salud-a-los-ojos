@@ -1,0 +1,38 @@
+<div id="modelos" class="bg" ng-class="modelo">
+	
+
+	<div class="modelo">
+		<div class="modelo-container">
+			<div ng-repeat="value in imgs" class="img">
+				<img ng-src="{{value}}" />
+			</div>
+		</div>
+			
+
+		<div class="control left">
+			<a href="#" class="btn-control" ng-click="control('left')"></a>
+		</div>
+
+		<div class="control right">
+			<a href="#" class="btn-control" ng-click="control('right')"></a>
+		</div>
+	</div>
+
+	<div class="thumbnails">
+		<ul>
+			<li ng-repeat="value in modelos" ng-class="{active: modeloActiva(value.modelo)}" class="modelo-thumbnail">
+				<a ng-href="/galeria/{{value.modelo}}">
+					<img ng-src="{{value.thumbnail}}" />
+				</a>
+			</li>
+			<li class="compartir">
+				<a href="#">
+					Compartir <i class="fa fa-share-alt"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+
+</div>

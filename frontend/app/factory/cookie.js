@@ -4,7 +4,7 @@ saludalosojos.factory("Cookie", function ($rootScope, $window){
 
     setCookie: function (callback){
       var d = new Date();
-      d.setTime(d.getTime() + 60*60*1000);
+      d.setTime(d.getTime() + (1000 * 60 * 60 * 24 * 7));
       var expires = "expires="+d.toGMTString();
       document.cookie = this.CookieName + "=OfAge; " + expires;
       if (callback) callback();

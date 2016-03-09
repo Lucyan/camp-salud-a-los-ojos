@@ -18,6 +18,16 @@ saludalosojos.config(['$routeProvider', '$locationProvider', function ($routePro
 		templateUrl: 'app/modules/descargas/descargas.template.html',
 		controller: 'descargas.controller'
 	})
+	.when('/galeria',
+	{
+		templateUrl: 'app/modules/modelos/modelos.template.html',
+		controller: 'modelosController'
+	})
+	.when('/galeria/:modelo',
+	{
+		templateUrl: 'app/modules/modelos/modelos.template.html',
+		controller: 'modelosController'
+	})
 	.when('/404',
 	{
 		templateUrl: 'app/modules/404/404.template.html'
