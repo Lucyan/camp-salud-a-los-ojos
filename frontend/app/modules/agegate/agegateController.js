@@ -13,5 +13,4 @@ saludalosojos.controller("agegateController", function ($scope, Cookie, $locatio
 			});
 		}
 	}
-
 });

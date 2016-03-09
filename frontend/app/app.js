@@ -1,6 +1,6 @@
 'use strict';
 
-var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap", "ngProgress"]);
+var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap", "ngProgress", "ngAnimate"]);
 
 /**
  *  Main App Controller
