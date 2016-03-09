@@ -1,11 +1,11 @@
 saludalosojos.config(function ($routeProvider){
 
   $routeProvider
-  .when('/',
+  .when('/agegate',
   {
     templateUrl: 'app/modules/agegate/agegate.template.html'
   })
-  .when('/home',
+  .when('/',
   {
     templateUrl: 'app/modules/home/home.template.html',
     controller: 'homeController'
