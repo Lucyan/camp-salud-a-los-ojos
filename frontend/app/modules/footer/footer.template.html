@@ -1,0 +1,22 @@
+<div class="content-fluid" ng-class="{home: home_active}">
+	<div class="row">
+		<div class="col-md-4 text-left">
+			<span ng-switch on="home_active">
+				<img ng-switch-when="true" src="img/footer/left.home.png" />
+				<img ng-switch-default src="img/footer/left.png" />
+			</span>
+		</div>
+		<div class="col-md-4 text-center">
+			© 2016 Todos los derechos reservados
+		</div>
+		<div class="col-md-4 text-right">
+			<a href="http://www.wikot.com/" target="_blank">
+				<span>Hecho en</span>
+				<span ng-switch on="home_active">
+					<img ng-switch-when="true" src="img/footer/right.home.png" />
+					<img ng-switch-default src="img/footer/right.png" />
+				</span>
+			</a>
+		</div>
+	</div>
+</div>
