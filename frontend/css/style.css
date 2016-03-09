@@ -25,7 +25,7 @@ a {
 	color: #fff;
 }
 
-a:hover, a:active, a:visited {
+a:focus, a:hover, a:active, a:visited {
 	text-decoration: none;
 	color: #fff;
 }
@@ -310,9 +310,15 @@ a:hover, a:active, a:visited {
 
 #modelos .modelo .modelo-container .img {
 	float: left;
-	transition: margin-left 0.5s;
 	width: 33.3333333%;
+	margin-left: 0%;
+	transition: margin-left 1s;
 }
+
+#modelos .modelo .modelo-container .img.next {
+	margin-left: -33.3333333%;
+}
+
 
 #modelos .modelo .modelo-container .img img {
 	width: 100%;
