@@ -321,11 +321,42 @@ a:hover, a:active, a:visited {
 #modelos .modelo .control {
 	position: absolute;
 	margin: auto;
-	left: 0px;
-	right: 0px;
+	height: 43px;
+	width: 37px;
 	top: 0px;
 	bottom: 0px;
-	height: 30px;
+}
+
+#modelos .modelo .control a {
+	padding: 10px;
+}
+
+#modelos .modelo .control.left {
+	left: 20%;
+}
+
+#modelos .modelo .control.left .btn-control {
+	background: url(../modelos/cleft.png);
+	background-position: 0px 0px;
+}
+
+#modelos .modelo .control.right {
+	right: 20%;
+}
+
+#modelos .modelo .control.right .btn-control {
+	background: url(../modelos/cright.png);
+	background-position: 0px 0px;
+}
+
+#modelos .modelo .control .btn-control {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#modelos .modelo .control .btn-control:hover {
+	background-position: -37px 0px;
 }
 
 #modelos .thumbnails {
