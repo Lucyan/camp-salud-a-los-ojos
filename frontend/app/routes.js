@@ -5,7 +5,8 @@ saludalosojos.config(['$routeProvider', '$locationProvider', function ($routePro
 	$routeProvider
 	.when('/agegate',
 	{
-		templateUrl: 'app/modules/agegate/agegate.template.html'
+		templateUrl: 'app/modules/agegate/agegate.template.html',
+		controller: 'agegateController'
 	})
 	.when('/',
 	{
