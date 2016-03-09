@@ -16,6 +16,10 @@ html, body {
 	height: 100%;
 }
 
+.tpl-view {
+	position: relative;
+}
+
 /*BG video*/
 
 .bg-video {
@@ -69,8 +73,27 @@ html, body {
 }
 
 
+/* Agegate */
 
+#agegate {
+	margin-top: 10%;
+}
 
+#agegate header {
+	margin-bottom: 40px;
+}
+
+#agegate section p {
+	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+
+@media (max-width: 767px) {
+	#agegate section .choice {
+		text-align: center!important;
+		margin-bottom: 20px;
+	}
+}
 
 /* Home Footer */
 
