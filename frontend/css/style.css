@@ -181,8 +181,9 @@ a:hover, a:active, a:visited {
 #menu {
 	position: fixed;
 	top: 40px;
-	left: 40px;
+	left: 20px;
 	z-index: 99999;
+	padding-left: 20px;
 }
 
 #menu .options {
@@ -190,6 +191,8 @@ a:hover, a:active, a:visited {
 	max-height: 0px;
 	transition: max-height .3s;
 	padding-bottom: 10px;
+	padding-left: 20px;
+	margin-left: -20px;
 }
 
 #menu .options.show {
