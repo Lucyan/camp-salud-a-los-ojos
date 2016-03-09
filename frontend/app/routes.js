@@ -17,8 +17,12 @@ saludalosojos.config(['$routeProvider', '$locationProvider', function ($routePro
 	{
 		templateUrl: 'app/modules/staticPage/staticPage.template.html'
 	})
+	.when('/404',
+	{
+		templateUrl: 'app/modules/404/404.template.html'
+	})
 	.otherwise({
-		redirectTo: '/'
+		redirectTo: '/404'
 	});
 
 }]);

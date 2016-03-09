@@ -239,3 +239,35 @@ a:hover, a:active, a:visited {
 #menu .redes > a.facebook {
 	padding-right: 8px;
 }
+
+/* 404 */
+
+#template404 {
+	width: 100%;
+	height: 100%;
+	background: url(../img/404/bg.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: #DC0E0D;
+	position: absolute;
+	font-family: Verdana;
+	font-size: 26px;
+}
+
+#template404 .content {
+	margin-top: 100px;
+}
+
+#template404 .content > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#template404 .content .text {
+	margin-left: 40px;
+}
+
+#template404 .content .text span {
+	font-size: 90px;
+	font-weight: bold;
+}
