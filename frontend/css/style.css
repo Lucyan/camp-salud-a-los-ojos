@@ -185,6 +185,17 @@ a:hover, a:active, a:visited {
 	z-index: 99999;
 }
 
+#menu .options {
+	overflow: hidden;
+	max-height: 0px;
+	transition: max-height .3s;
+	padding-bottom: 10px;
+}
+
+#menu .options.show {
+	max-height: 300px;
+}
+
 #menu ul {
 	list-style: none;
 	margin-top: 30px;
