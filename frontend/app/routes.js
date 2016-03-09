@@ -13,9 +13,15 @@ saludalosojos.config(['$routeProvider', '$locationProvider', function ($routePro
 		templateUrl: 'app/modules/home/home.template.html',
 		controller: 'homeController'
 	})
-	.when('/static-page',
+	.when('/galeria',
 	{
-		templateUrl: 'app/modules/staticPage/staticPage.template.html'
+		templateUrl: 'app/modules/modelos/modelos.template.html',
+		controller: 'modelosController'
+	})
+	.when('/galeria/:modelo',
+	{
+		templateUrl: 'app/modules/modelos/modelos.template.html',
+		controller: 'modelosController'
 	})
 	.when('/404',
 	{

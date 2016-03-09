@@ -287,3 +287,89 @@ a:hover, a:active, a:visited {
 	font-size: 90px;
 	font-weight: bold;
 }
+
+/* Modelos */
+
+#modelos {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#modelos .modelo {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#modelos .modelo .modelo-container {
+	position: relative;
+	overflow: hidden;
+	width: 300%;
+}
+
+#modelos .modelo .modelo-container .img {
+	float: left;
+	transition: margin-left 0.5s;
+	width: 33.3333333%;
+}
+
+#modelos .modelo .modelo-container .img img {
+	width: 100%;
+}
+
+#modelos .modelo .control {
+	position: absolute;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	height: 30px;
+}
+
+#modelos .thumbnails {
+	position: fixed;
+	top: 40px;
+	right: 40px;
+}
+
+#modelos .thumbnails ul {
+	list-style: none;
+}
+
+#modelos .thumbnails ul li {
+	transition: margin 0.3s;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+#modelos .thumbnails ul li.modelo-thumbnail:hover {
+	margin-top: -5px;
+	margin-bottom: 25px;
+}
+
+#modelos .thumbnails ul li.modelo-thumbnail:hover img {
+	box-shadow: 0px 0px 15px #2E2E2E;
+}
+
+#modelos .thumbnails ul li.modelo-thumbnail.active img {
+	border: 3px solid #fff;
+	margin-left: -3px;
+}
+
+.bg.mariana {
+	background: rgb(255,190,65);
+}
+
+.bg.ivana {
+	background: rgb(255,74,53);
+}
+
+.bg.lupe {
+	background: rgb(210,53,69);
+}
+
+.bg.dumi {
+	background: rgb(197,214,62);
+}
