@@ -504,6 +504,7 @@ a:hover, a:active, a:visited, a:focus {
 	position: relative;
 	overflow: hidden;
 	width: 300%;
+	height: 100%;
 }
 
 #modelos .modelo .modelo-container .img {
@@ -579,7 +580,7 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 #modelos .thumbnails ul li {
-	transition: margin 0.3s;
+	transition: all 0.3s;
 	margin-bottom: 20px;
 	text-align: right;
 }
@@ -641,6 +642,140 @@ a:hover, a:active, a:visited, a:focus {
 
 .bg.dumi {
 	background: rgb(197,214,62);
+}
+
+@media (max-width: 767px) {
+	#modelos .modelo .modelo-container .img img {
+		margin-top: 0px!important;
+	}
+
+	#modelos .modelo .control {
+		top: auto;
+		bottom: 30px;
+	}
+
+	#modelos .modelo .control.left {
+		left: 20px;
+	}
+
+	#modelos .modelo .control.right {
+		right: 20px;
+	}
+
+	#modelos .thumbnails {
+		position: absolute;
+	    bottom: 0px;
+	    top: auto;
+	    left: 0px;
+	    right: 0px;
+	    margin: auto;
+	}
+
+	#modelos .thumbnails.open {
+		top: 0px;
+    	background: rgba(0,0,0,0.75);
+    	z-index: 99999;
+	}
+
+	#modelos .thumbnails ul {
+		padding: 0px;
+		margin: auto;
+		margin-bottom: 0px;
+		position: absolute;
+		bottom: 30px;
+		left: -57px;
+		right: 0px;
+		width: 50px;
+	}
+
+	#modelos .share-mobile {
+		position: absolute;
+		bottom: 30px;
+		left: 70px;
+		right: 0px;
+		margin: auto;
+		width: 37px;
+		height: 43px;
+	}
+
+	#modelos .modelo .modelo-container {
+		overflow-y: auto;
+	}
+
+	#modelos .thumbnails ul li {
+		text-align: center;
+	}
+
+	#modelos .thumbnails ul li.modelo-thumbnail {
+		margin: 0px!important;
+		position: absolute;
+		bottom: 0px;
+	}
+
+	#modelos .thumbnails ul li.modelo-thumbnail:hover img {
+		box-shadow: none;
+	}
+
+	#modelos .thumbnails ul li.modelo-thumbnail img {
+		border: 2px solid #fff!important;
+		margin: 0px!important;
+	}
+
+	#modelos .thumbnails ul li.modelo-thumbnail.active {
+		z-index: 4;
+	}
+
+	#modelos .thumbnails ul li.modelo-thumbnail.no-active.index-1 {
+		z-index: 3;
+		bottom: 5px;
+		left: -5px;
+	}
+
+	#modelos .thumbnails ul li.modelo-thumbnail.no-active.index-2 {
+		z-index: 2;
+		bottom: 10px;
+		left: -10px;
+	}
+
+	#modelos .thumbnails ul li.modelo-thumbnail.no-active.index-3 {
+		z-index: 1;
+		bottom: 15px;
+		left: -15px;
+	}
+
+	#modelos .thumbnails.open ul li.modelo-thumbnail {
+		left: 0px!important;
+	}
+
+	#modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-1 {
+		bottom: 64px;
+	}
+
+	#modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-2 {
+		bottom: 124px;
+	}
+
+	#modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-3 {
+		bottom: 184px;
+	}
+
+	.modal-compartir-modelo .box {
+		padding: 0px 15px;
+	}
+
+	.modal-compartir-modelo .box span {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.modal-compartir-modelo .box a{
+		margin-right: 20px;
+		margin-left: 0px;
+	}
+
+	.modal-compartir-modelo .box a.facebook {
+		margin-right: 0px;
+	}
 }
 
 

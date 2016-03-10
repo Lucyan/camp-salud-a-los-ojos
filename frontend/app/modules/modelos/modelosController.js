@@ -56,14 +56,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 		$scope.modelo = $routeParams.modelo;
 	}
 
-	$scope.modeloActiva = function (modelo) {
-		if ($scope.modelo == modelo)
-			return true;
-		return false;
-	}
-
 	$scope.imgs = [];
-	
 	for (var i in $scope.modelos) {
 		if ($scope.modelos[i].modelo == $scope.modelo) {
 			$scope.imgs = $scope.modelos[i].imgs;
@@ -94,29 +87,32 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 	}
 
 	$scope.scrollImage = function ($event) {
-		var height_window = angular.element($window).height();
-		var height_footer = angular.element("#site-footer").outerHeight();
-		var height = height_window - height_footer;
 
-		var height_image = angular.element($event.currentTarget).attr("data-height");
+		if (angular.element($window).width() > 767) {
+			var height_window = angular.element($window).height();
+			var height_footer = angular.element("#site-footer").outerHeight();
+			var height = height_window - height_footer;
 
-		var scroll = ( height / height_image ) * height;
+			var height_image = angular.element($event.currentTarget).attr("data-height");
 
-		var point = $event.pageY / height;
+			var scroll = ( height / height_image ) * height;
 
-		var marginTop = (point * (scroll)) * 8;
+			var point = $event.pageY / height;
 
-		marginTop = marginTop * -1;
-		
-		if (marginTop > 0)
-			marginTop = 0;
-		else {
-			var max = (height_image - height_window) * -1;
-			if (marginTop < max)
-				marginTop = max;
+			var marginTop = (point * (scroll)) * 8;
+
+			marginTop = marginTop * -1;
+			
+			if (marginTop > 0)
+				marginTop = 0;
+			else {
+				var max = (height_image - height_window) * -1;
+				if (marginTop < max)
+					marginTop = max;
+			}
+
+			angular.element($event.currentTarget).css("margin-top", marginTop);
 		}
-
-		angular.element($event.currentTarget).css("margin-top", marginTop);
 	}
 
 	$scope.openmodal = function (){
@@ -159,4 +155,26 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 		},300);
 		return false;
 	}
+
+	var noclosethumbnail = false;
+
+	$scope.selectThumbnail = function ($event) {
+		var window_width = angular.element($window).width();
+		if (window_width < 768) {
+			noclosethumbnail = true;
+			$timeout(function () {
+				noclosethumbnail = false;
+			},300);
+			if (!angular.element("#modelos .thumbnails").hasClass("open")) {
+				angular.element("#modelos .thumbnails").addClass("open")
+				$event.preventDefault();	
+			}
+		}
+	}
+
+	$scope.closeThumbnails = function () {
+		if (!noclosethumbnail)
+			angular.element("#modelos .thumbnails").removeClass("open");
+	}
+
 });
