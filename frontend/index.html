@@ -15,10 +15,6 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css" />
     <!-- / Bootstrap for Angular -->
 
-    <!-- ngProgress -->
-    <link href="lib/ngprogress/ngProgress.css" rel="stylesheet">
-    <!-- / ngProgress -->
-
     <!-- animate.css -->
     <link href="lib/animate.css/animate.min.css" rel="stylesheet">
     <!-- / animate.css -->
@@ -28,7 +24,7 @@
     <!-- / FontAwesome -->
 
     <!-- Fonts -->
-    <link href="lib/fonts/stylesheet.css" rel="stylesheet" />
+    <link href="fonts/stylesheet.css" rel="stylesheet" />
     <!-- / Fonts -->
 
     <!-- Application Styles -->
@@ -45,8 +41,11 @@
 
     <div id="content">
       <div class="view">
-        <div class="bg-video" ng-show="home_active">
-          <img src="img/bg-women.png" />
+        <div class="bg-video">
+          <video width="100%" autoplay loop>
+            <source src="video/bg-web.mp4" type="video/mp4">
+            <img src="img/bg-women.png" />
+          </video>
 
           <div class="filter">
           </div>
@@ -84,10 +83,6 @@
   <script src="lib/angulartics/dist/angulartics.min.js"></script>
   <script src="lib/angulartics/dist/angulartics-ga.min.js"></script>
   <!-- / Angulartics + Google Analytics -->
-
-  <!-- ngProgress -->
-  <script src="lib/ngprogress/build/ngProgress.min.js"></script>
-  <!-- / ngProgress -->
 
   <!-- Application -->
 

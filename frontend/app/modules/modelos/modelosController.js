@@ -71,8 +71,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 
 	var indeximage = 0;
 
-	$scope.control = function (move) {
-		
+	$scope.control = function (move) {	
 		if (move == "left") {
 			if (indeximage > 0) {
 				indeximage--;
@@ -84,8 +83,5 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				indeximage++;
 			}
 		}
-	}	
-
-
-
+	}
 });
