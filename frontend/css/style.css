@@ -613,3 +613,47 @@ a:hover, a:active, a:visited, a:focus {
 .bg.dumi {
 	background: rgb(197,214,62);
 }
+
+
+/* Videos */
+
+#videos {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#videos .close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+	font-size: 30px;
+	opacity: .3;
+	transition: opacity .3s;
+	cursor: pointer;
+}
+
+#videos .close:hover {
+	opacity: 1;
+}
+
+#principal .animate-home-video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#principal .animate-home-video.ng-enter {
+	-webkit-animation: fadeIn .5s;
+	-moz-animation: fadeIn .5s;
+	-ms-animation: fadeIn .5s;
+	animation: fadeIn .5s;
+}
+
+#principal .animate-home-video.ng-leave {
+	-webkit-animation: fadeOut .5s;
+	-moz-animation: fadeOut .5s;
+	-ms-animation: fadeOut .5s;
+	animation: fadeOut .5s;
+}

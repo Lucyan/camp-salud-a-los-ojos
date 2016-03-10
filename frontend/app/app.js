@@ -8,6 +8,8 @@ var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap",
 
 saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', function ($scope, Cookie, $location) {
 
+	$scope.view_video = false;
+
 	Cookie.checkCookie({
 		error: function (){
 			$location.path("/agegate");
@@ -15,16 +17,18 @@ saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', fun
 	});
 
 	$scope.$on('$routeChangeStart', function(scope, next, current) {
-		if (next.$$route.controller == 'homeController' || next.$$route.controller == 'agegateController') {
-			$scope.home_active = true;
-			if (next.$$route.controller == 'agegateController') {
-				$scope.show_menu = false;
+		if (next.$$route != undefined) {
+			if (next.$$route.controller == 'homeController' || next.$$route.controller == 'agegateController') {
+				$scope.home_active = true;
+				if (next.$$route.controller == 'agegateController') {
+					$scope.show_menu = false;
+				} else {
+					$scope.show_menu = true;
+				}
 			} else {
+				$scope.home_active = false;
 				$scope.show_menu = true;
 			}
-		} else {
-			$scope.home_active = false;
-			$scope.show_menu = true;
 		}
 	});
 
@@ -42,5 +46,14 @@ saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', fun
 			return viewLocation === '/' + $location.path().split('/')[1];
 		
 		return viewLocation === $location.path();
+	}
+
+	$scope.showVideo = function($event) {
+		$event.preventDefault();
+		$scope.view_video = true;
+	}
+
+	$scope.closeVideo = function() {
+		$scope.view_video = false;
 	}
 }]);
