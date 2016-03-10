@@ -538,6 +538,10 @@ a:hover, a:active, a:visited, a:focus {
 	height: 100%;
 }
 
+#modelos .modelo .control .btn-control.disabled {
+	opacity: 0.5;
+}
+
 #modelos .modelo .control .btn-control:hover {
 	background-position: -37px 0px;
 }

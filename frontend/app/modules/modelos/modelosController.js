@@ -69,18 +69,18 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 		}
 	}
 
-	var indeximage = 0;
+	$scope.indeximage = 0;
 
 	$scope.control = function (move) {	
 		if (move == "left") {
-			if (indeximage > 0) {
-				indeximage--;
-				jQuery(".img:eq(" + indeximage + ")").removeClass("next");
+			if ($scope.indeximage > 0) {
+				$scope.indeximage--;
+				jQuery(".img:eq(" + $scope.indeximage + ")").removeClass("next");
 			}
 		} else {
-			if (indeximage < 2) {
-				jQuery(".img:eq(" + indeximage + ")").addClass("next");
-				indeximage++;
+			if ($scope.indeximage < 2) {
+				jQuery(".img:eq(" + $scope.indeximage + ")").addClass("next");
+				$scope.indeximage++;
 			}
 		}
 	}
