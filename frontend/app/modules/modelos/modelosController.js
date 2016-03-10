@@ -44,7 +44,9 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 			thumbnail : "modelos/thumbnails/4.png",
 			modelo: "dumi"
 		}
-	]
+	];
+
+	$scope.url = $location.absUrl();
 
 	if (!$routeParams.modelo) {
 		$location.path("/galeria/" + modelos_slug[0]);
@@ -77,7 +79,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				$scope.indeximage--;
 				jQuery(".img:eq(" + $scope.indeximage + ")").removeClass("next");
 				$timeout(function (){
-					jQuery(".img:eq(" + ($scope.indeximage) + ")").find("img").css("margin-top", -200);
+					jQuery(".img:eq(" + ($scope.indeximage+1) + ")").find("img").css("margin-top", -200);
 				}, 1000);
 			}
 		} else {
@@ -114,8 +116,47 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				marginTop = max;
 		}
 
-		angular.element($event.currentTarget).css("margin-top", marginTop);		
-
+		angular.element($event.currentTarget).css("margin-top", marginTop);
 	}
 
+	$scope.openmodal = function (){
+		angular.element(".modal-compartir-modelo").css("display", "block");
+		$timeout(function (){
+			angular.element(".modal-compartir-modelo").addClass("open");
+			angular.element(".modal-compartir-modelo").focus();
+		}, 300);
+	}
+
+	var noclose = false;
+
+	$scope.closemodal = function ($event){
+		if (!noclose) {
+			var close = false;
+			if (!$event) {
+				close = true;
+			} else {
+				if ($event.keyCode == 27)
+					close = true;
+			}
+
+			if (close) {
+				angular.element(".modal-compartir-modelo").removeClass("open");
+				angular.element(".modal-compartir-modelo").css("display", "block");	
+				$timeout(function (){
+					angular.element(".modal-compartir-modelo").css("display", "none");
+				}, 300);
+			}
+		}
+	}
+
+	$scope.title = "hello world";
+
+	$scope.share = function($event) {
+		noclose = true;
+		$window.open(angular.element($event.currentTarget).attr("href"), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+		$timeout(function () {
+			noclose = false;
+		},300);
+		return false;
+	}
 });
