@@ -624,6 +624,35 @@ a:hover, a:active, a:visited, a:focus {
 	margin-right: -3px;
 }
 
+.modal-compartir-modelo {
+	position: absolute;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.modal-compartir-modelo.open {
+	opacity: 1;
+}
+
+.modal-compartir-modelo .box {
+	position: absolute;
+    height: 99px;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    font-family: 'Gotham-Light';
+}
+
+.modal-compartir-modelo .box a {
+	margin-left: 20px; 
+}
+
 .bg.mariana {
 	background: rgb(255,190,65);
 }

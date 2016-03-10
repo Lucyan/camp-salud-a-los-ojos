@@ -1,5 +1,4 @@
 <div id="modelos" class="bg" ng-class="modelo">
-	
 
 	<div class="modelo">
 		<div class="modelo-container">
@@ -26,13 +25,30 @@
 				</a>
 			</li>
 			<li class="compartir">
-				<a href="#">
+				<a href="#" ng-click="openmodal()">
 					Compartir <i class="fa fa-share-alt"></i>
 				</a>
 			</li>
 		</ul>
 	</div>
+</div>
 
 
+<div class="modal-compartir-modelo" ng-keyup="closemodal($event)" ng-click="closemodal()" tabindex="1">
+	<div class="box text-center">
+		<span>
+			Compartir con amigos en:
+		</span>
 
+		<img src="img/line.png" />
+
+		<a href="#" ng-href="http://twitter.com/share?text={{title}}&amp;url={{url}}" target="_blank" ng-click="share($event)">
+			<img src="img/share/twitter.png" />
+		</a>
+
+		<a href="#" ng-href="http://www.facebook.com/share.php?u={{url}}" target="_blank" ng-click="share($event)">
+			<img src="img/share/facebook.png"  />
+		</a>
+
+	</div>
 </div>
