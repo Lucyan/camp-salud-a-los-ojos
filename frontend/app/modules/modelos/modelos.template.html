@@ -4,17 +4,17 @@
 	<div class="modelo">
 		<div class="modelo-container">
 			<div ng-repeat="value in imgs" class="img">
-				<img ng-src="{{value}}" />
+				<img ng-src="{{value}}" class="img-modelo" ng-mousemove="scrollImage($event)" load-image />
 			</div>
 		</div>
 			
 
 		<div class="control left">
-			<a href="#" class="btn-control" ng-click="control('left')"></a>
+			<a href="#" class="btn-control" ng-click="control('left')" ng-class="{disabled: indeximage == 0 }"></a>
 		</div>
 
 		<div class="control right">
-			<a href="#" class="btn-control" ng-click="control('right')"></a>
+			<a href="#" class="btn-control" ng-click="control('right')" ng-class="{disabled: indeximage == 2 }"></a>
 		</div>
 	</div>
 

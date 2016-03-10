@@ -1,4 +1,4 @@
-saludalosojos.controller("modelosController", function ($scope, $location, $routeParams) {
+saludalosojos.controller("modelosController", function ($scope, $location, $routeParams, $window, $timeout) {
 
 	var modelos_slug = [
 		"mariana",
@@ -69,23 +69,53 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 		}
 	}
 
-	var indeximage = 0;
+	$scope.indeximage = 0;
 
-	$scope.control = function (move) {
-		
+	$scope.control = function (move) {	
 		if (move == "left") {
-			if (indeximage > 0) {
-				indeximage--;
-				jQuery(".img:eq(" + indeximage + ")").removeClass("next");
+			if ($scope.indeximage > 0) {
+				$scope.indeximage--;
+				jQuery(".img:eq(" + $scope.indeximage + ")").removeClass("next");
+				$timeout(function (){
+					jQuery(".img:eq(" + ($scope.indeximage) + ")").find("img").css("margin-top", -200);
+				}, 1000);
 			}
 		} else {
-			if (indeximage < 2) {
-				jQuery(".img:eq(" + indeximage + ")").addClass("next");
-				indeximage++;
+			if ($scope.indeximage < 2) {
+				jQuery(".img:eq(" + $scope.indeximage + ")").addClass("next");
+				$timeout(function (){
+					jQuery(".img:eq(" + ($scope.indeximage-1) + ")").find("img").css("margin-top", -200);
+				}, 1000);
+				$scope.indeximage++;
 			}
 		}
-	}	
+	}
 
+	$scope.scrollImage = function ($event) {
+		var height_window = angular.element($window).height();
+		var height_footer = angular.element("#site-footer").outerHeight();
+		var height = height_window - height_footer;
 
+		var height_image = angular.element($event.currentTarget).attr("data-height");
+
+		var scroll = ( height / height_image ) * height;
+
+		var point = $event.pageY / height;
+
+		var marginTop = (point * (scroll)) * 8;
+
+		marginTop = marginTop * -1;
+		
+		if (marginTop > 0)
+			marginTop = 0;
+		else {
+			var max = (height_image - height_window) * -1;
+			if (marginTop < max)
+				marginTop = max;
+		}
+
+		angular.element($event.currentTarget).css("margin-top", marginTop);		
+
+	}
 
 });

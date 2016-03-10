@@ -520,6 +520,7 @@ a:hover, a:active, a:visited, a:focus {
 
 #modelos .modelo .modelo-container .img img {
 	width: 100%;
+	margin-top: -200px;
 }
 
 #modelos .modelo .control {
@@ -559,6 +560,10 @@ a:hover, a:active, a:visited, a:focus {
 	height: 100%;
 }
 
+#modelos .modelo .control .btn-control.disabled {
+	opacity: 0.3;
+}
+
 #modelos .modelo .control .btn-control:hover {
 	background-position: -37px 0px;
 }
@@ -590,7 +595,7 @@ a:hover, a:active, a:visited, a:focus {
 
 #modelos .thumbnails ul li.modelo-thumbnail.active img {
 	border: 3px solid #fff;
-	margin-left: -3px;
+	margin-right: -3px;
 }
 
 .bg.mariana {
