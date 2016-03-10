@@ -8,10 +8,10 @@
 		<li ng-class="{ active: isActive('/galeria')}">
 			<a href="/galeria">Galería</a>
 		</li>
-		<li ng-click="showVideo($event);">
+		<li ng-click="showVideo($event, 'video');">
 			<a href="/video">Video de Modelos</a>
 		</li>
-		<li ng-class="{ active: isActive('/making-of-calendario')}">
+		<li ng-click="showVideo($event, 'making');">
 			<a href="/making-of-calendario">Making of Calendario</a>
 		</li>
 		<li ng-class="{ active: isActive('/descargas')}">
