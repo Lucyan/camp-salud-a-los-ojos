@@ -442,7 +442,7 @@ a:hover, a:active, a:visited, a:focus {
 	position: relative;
 	width: 225px;
 	height: 100%;
-	padding-top: 31%;
+	padding-top: 31.14%;
 	padding-left: 1%;
 }
 
@@ -502,14 +502,14 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 #descargas-content .note .paging {
-	bottom: 60px;
+	bottom: 15%;
 }
 
 #descargas-content .note .mascara {
 	position: relative;
 	width: 660px;
 	height: 100%;
-	padding-top: 3%;
+	padding-top: 3.24%;
 }
 
 #descargas-content .note .mascara .note {
