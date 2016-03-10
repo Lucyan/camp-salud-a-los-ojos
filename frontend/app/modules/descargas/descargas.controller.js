@@ -22,15 +22,46 @@ saludalosojos.controller('descargas.controller', function($scope) {
 		}
 	]
 
+	var noteImgWidht = 501;
+
+	var note = [
+		{
+			url: 'img/descargas/note/modelo.png',
+			name: 'modelo.png'
+		},
+		{
+			url: 'img/descargas/note/modelo.png',
+			name: 'modelo.png'
+		},
+		{
+			url: 'img/descargas/note/modelo.png',
+			name: 'modelo.png'
+		},
+		{
+			url: 'img/descargas/note/modelo.png',
+			name: 'modelo.png'
+		}
+	]
+
+
 	$scope.objWidht = smartImgWidht;
 	$scope.ulWidht = smartImgWidht;
 	$scope.page = 1;
 	$scope.imageList = []
 
-	$scope.loadSmart = function() {
+	$scope.initData = function(option) {
+		switch (option) {
+			case 'note':
+				$scope.objWidht = noteImgWidht;
+				$scope.imageList = note;
+				break;
+			default:
+				$scope.objWidht = smartImgWidht;
+				$scope.imageList = smart;
+				break;
+		}
+
 		$scope.page = 1;
-		$scope.objWidht = smartImgWidht;
-		$scope.imageList = smart;
 		$scope.ulWidht = $scope.objWidht * $scope.imageList.length;
 	}
 

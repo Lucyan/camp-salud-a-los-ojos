@@ -227,7 +227,7 @@ a:hover, a:active, a:visited, a:focus {
 	margin-bottom: 15px;
 }
 
-#menu ul li:hover:before {
+#menu ul li:hover:before, #menu ul li.active:before {
 	display: block;
 	position: absolute;
 	content: "|";
@@ -338,17 +338,17 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 #descargas-content .animate-descargas.ng-enter {
-	-webkit-animation: fadeIn .5s;
-	-moz-animation: fadeIn .5s;
-	-ms-animation: fadeIn .5s;
-	animation: fadeIn .5s;
+	-webkit-animation: zoomIn .5s;
+	-moz-animation: zoomIn .5s;
+	-ms-animation: zoomIn .5s;
+	animation: zoomIn .5s;
 }
 
 #descargas-content .animate-descargas.ng-leave {
-	-webkit-animation: fadeOut .5s;
-	-moz-animation: fadeOut .5s;
-	-ms-animation: fadeOut .5s;
-	animation: fadeOut .5s;
+	-webkit-animation: zoomOut .5s;
+	-moz-animation: zoomOut .5s;
+	-ms-animation: zoomOut .5s;
+	animation: zoomOut .5s;
 }
 
 
@@ -453,7 +453,7 @@ a:hover, a:active, a:visited, a:focus {
 
 #smart-download img.linea {
 	position: absolute;
-	top: 75px;
+	top: 90px;
 	right: -30px;
 }
 
@@ -462,6 +462,28 @@ a:hover, a:active, a:visited, a:focus {
 	background-color: #FFFFFF;
 	color: #D61E19;
 	font-size: 12px;
+}
+
+#descargas-content .note .paging {
+	bottom: 60px;
+}
+
+#descargas-content .note .mascara {
+	position: relative;
+	width: 660px;
+	height: 394px;
+	padding-top: 21px;
+}
+
+#descargas-content .note .mascara .note {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#smart-download .btn {
+	background-color: transparent;
+	color: #fff;
 }
 
 /* Modelos */
@@ -619,4 +641,48 @@ a:hover, a:active, a:visited, a:focus {
 
 .bg.dumi {
 	background: rgb(197,214,62);
+}
+
+
+/* Videos */
+
+#videos {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#videos .close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+	font-size: 30px;
+	opacity: .3;
+	transition: opacity .3s;
+	cursor: pointer;
+}
+
+#videos .close:hover {
+	opacity: 1;
+}
+
+#principal .animate-home-video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#principal .animate-home-video.ng-enter {
+	-webkit-animation: fadeIn .5s;
+	-moz-animation: fadeIn .5s;
+	-ms-animation: fadeIn .5s;
+	animation: fadeIn .5s;
+}
+
+#principal .animate-home-video.ng-leave {
+	-webkit-animation: fadeOut .5s;
+	-moz-animation: fadeOut .5s;
+	-ms-animation: fadeOut .5s;
+	animation: fadeOut .5s;
 }
