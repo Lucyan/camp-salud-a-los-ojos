@@ -1,8 +1,8 @@
 <div class="celular" ng-init="initData('smart');">
-	<div class="mascara">
+	<div class="mascara" ng-style="{'width': contentWidth}">
 		<div class="list-content" ng-style="{'width': objWidht}">
 			<ul ng-style="{'width': ulWidht, 'margin-left': (page - 1) * objWidht * -1}">
-				<li ng-repeat="imagen in imageList track by $index">
+				<li ng-repeat="imagen in imageList track by $index" ng-style="{width: objWidht}">
 					<img ng-src="{{imagen.url}}">
 				</li>
 			</ul>

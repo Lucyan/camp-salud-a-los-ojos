@@ -428,27 +428,30 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 #descargas-content .celular .paging {
-	bottom: 76px;
+	bottom: 16%;
 }
 
 #descargas-content .celular {
 	padding-left: 50px;
 	padding-right: 50px;
 	position: relative;
+	height: 100%;
 }
 
 #descargas-content .celular .mascara {
 	position: relative;
 	width: 225px;
-	height: 481px;
-	padding-top: 70px;
-	padding-left: 4px;
+	height: 100%;
+	padding-top: 31%;
+	padding-left: 1%;
 }
 
 #descargas-content .celular .mascara .phone {
 	position: absolute;
 	top: 0px;
 	left: 0px;
+	width: 100%;
+	height: 100%;
 }
 
 #descargas-content .list-content {
@@ -471,6 +474,10 @@ a:hover, a:active, a:visited, a:focus {
 	display: inline-block;
 }
 
+#descargas-content ul li img {
+	width: 100%;
+}
+
 #smart-download {
 	margin-top: 100px;
 	margin-left: 30px;
@@ -490,6 +497,10 @@ a:hover, a:active, a:visited, a:focus {
 	font-size: 12px;
 }
 
+#descargas-content .note {
+	height: 100%;
+}
+
 #descargas-content .note .paging {
 	bottom: 60px;
 }
@@ -497,8 +508,8 @@ a:hover, a:active, a:visited, a:focus {
 #descargas-content .note .mascara {
 	position: relative;
 	width: 660px;
-	height: 394px;
-	padding-top: 21px;
+	height: 100%;
+	padding-top: 3%;
 }
 
 #descargas-content .note .mascara .note {
@@ -511,6 +522,18 @@ a:hover, a:active, a:visited, a:focus {
 	background-color: transparent;
 	color: #fff;
 }
+
+#note-download {
+	display: block !important;
+	margin-top: 30px;
+}
+
+#note-download a {
+	font-family: 'Gotham';
+	font-size: 12px;
+	margin: 0 10px;
+}
+
 
 /* Modelos */
 

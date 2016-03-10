@@ -1,8 +1,8 @@
 <div class="note" ng-init="initData('note');">
-	<div class="mascara">
+	<div class="mascara" ng-style="{'width': contentWidth}">
 		<div class="list-content" ng-style="{'width': objWidht}">
 			<ul ng-style="{'width': ulWidht, 'margin-left': (page - 1) * objWidht * -1}">
-				<li ng-repeat="imagen in imageList track by $index">
+				<li ng-repeat="imagen in imageList track by $index" ng-style="{width: objWidht}">
 					<img ng-src="{{imagen.url}}">
 				</li>
 			</ul>
@@ -20,5 +20,8 @@
 
 
 <div id="note-download">
-	
+	<a ng-href="{{imageList[page].download.url1920}}" target="_blank" download="{{imageList[page].name}}">Descargar 1920x1080</a>
+	<a ng-href="{{imageList[page].download.url1600}}" target="_blank" download="{{imageList[page].name}}">Descargar 1600x1200</a>
+	<a ng-href="{{imageList[page].download.url1366}}" target="_blank" download="{{imageList[page].name}}">Descargar 1366x768</a>
+	<a ng-href="{{imageList[page].download.url1024}}" target="_blank" download="{{imageList[page].name}}">Descargar 1024x748</a>
 </div>
