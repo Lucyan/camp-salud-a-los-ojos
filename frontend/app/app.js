@@ -36,4 +36,11 @@ saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', fun
 		}
 		return input;
 	};
+
+	$scope.isActive = function (viewLocation) {
+		if (viewLocation == '/galeria')
+			return viewLocation === '/' + $location.path().split('/')[1];
+		
+		return viewLocation === $location.path();
+	}
 }]);

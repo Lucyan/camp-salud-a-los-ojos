@@ -2,19 +2,19 @@
 
 <div class="options" ng-class="{show: show_menu}">
 	<ul>
-		<li>
+		<li ng-class="{ active: isActive('/')}">
 			<a href="/">Home</a>
 		</li>
-		<li>
+		<li ng-class="{ active: isActive('/galeria')}">
 			<a href="/galeria">Galería</a>
 		</li>
-		<li>
+		<li ng-class="{ active: isActive('/video')}">
 			<a href="/video">Video de Modelos</a>
 		</li>
-		<li>
+		<li ng-class="{ active: isActive('/making-of-calendario')}">
 			<a href="/making-of-calendario">Making of Calendario</a>
 		</li>
-		<li>
+		<li ng-class="{ active: isActive('/descargas')}">
 			<a href="/descargas">Descargas</a>
 		</li>
 	</ul>
