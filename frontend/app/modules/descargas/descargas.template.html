@@ -19,6 +19,7 @@
 
 	<div ng-switch on="option_active" id="descargas-content" class="text-center">
 		<div ng-switch-when="note" class="animate-descargas"><div class="include-content" ng-include="'app/modules/descargas/note.template.html'" ></div></div>
+		<div ng-switch-when="calendar" class="animate-descargas"><div class="include-content" ng-include="'app/modules/descargas/calendar.template.html'" ></div></div>
 		<div ng-switch-default class="animate-descargas"><div class="include-content" ng-include="'app/modules/descargas/smart.template.html'" ></div></div>
 	</div>
 </div>
