@@ -6,7 +6,10 @@ var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap",
  *  Main App Controller
  **/
 
-saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', function ($scope, Cookie, $location) {
+saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', '$sce', function ($scope, Cookie, $location, $sce) {
+
+	var urlVideo = 'https://www.youtube.com/embed/qKgW7uAj-8U?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
+	var urlMaking = 'https://www.youtube.com/embed/ELQxobMDZQM?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
 
 	$scope.view_video = false;
 
@@ -48,9 +51,22 @@ saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', fun
 		return viewLocation === $location.path();
 	}
 
-	$scope.showVideo = function($event) {
+	$scope.showVideo = function($event, option) {
 		$event.preventDefault();
+		switch (option) {
+			case 'making' : 
+				$scope.urlIframeVideo = urlMaking;
+				break;
+			default :
+				$scope.urlIframeVideo = urlVideo;
+				break;
+		}
+
 		$scope.view_video = true;
+	}
+
+	$scope.trustSrc = function() {
+		return $sce.trustAsResourceUrl($scope.urlIframeVideo);
 	}
 
 	$scope.closeVideo = function() {

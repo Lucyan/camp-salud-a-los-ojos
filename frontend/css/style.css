@@ -66,22 +66,48 @@ a:hover, a:active, a:visited, a:focus {
 	border-left: solid 1.4142px #ffffff;
 }
 
+#principal .animate-home-video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#principal .animate-home-video.ng-enter {
+	-webkit-animation: fadeIn .5s;
+	-moz-animation: fadeIn .5s;
+	-ms-animation: fadeIn .5s;
+	animation: fadeIn .5s;
+}
+
+#principal .animate-home-video.ng-leave {
+	-webkit-animation: fadeOut .5s;
+	-moz-animation: fadeOut .5s;
+	-ms-animation: fadeOut .5s;
+	animation: fadeOut .5s;
+}
+
 
 /* Animations enter & leave */
 
-/*.ng-enter {
-	-webkit-animation: bounceInDown 1s;
-	-moz-animation: bounceInDown 1s;
-	-ms-animation: bounceInDown 1s;
-	animation: bounceInDown 1s;
+#principal .animate-views {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
-.ng-leave {
-	-webkit-animation: bounceOutUp 1s;
-	-moz-animation: bounceOutUp 1s;
-	-ms-animation: bounceOutUp 1s;
-	animation: bounceOutUp 1s;
-}*/
+#principal .animate-views.ng-enter {
+	-webkit-animation: fadeIn .5s;
+	-moz-animation: fadeIn .5s;
+	-ms-animation: fadeIn .5s;
+	animation: fadeIn .5s;
+}
+
+#principal .animate-views.ng-leave {
+	-webkit-animation: fadeOut .5s;
+	-moz-animation: fadeOut .5s;
+	-ms-animation: fadeOut .5s;
+	animation: fadeOut .5s;
+}
 
 
 /*BG video*/
@@ -402,27 +428,30 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 #descargas-content .celular .paging {
-	bottom: 76px;
+	bottom: 16%;
 }
 
 #descargas-content .celular {
 	padding-left: 50px;
 	padding-right: 50px;
 	position: relative;
+	height: 100%;
 }
 
 #descargas-content .celular .mascara {
 	position: relative;
 	width: 225px;
-	height: 481px;
-	padding-top: 70px;
-	padding-left: 4px;
+	height: 100%;
+	padding-top: 31.14%;
+	padding-left: 1%;
 }
 
 #descargas-content .celular .mascara .phone {
 	position: absolute;
 	top: 0px;
 	left: 0px;
+	width: 100%;
+	height: 100%;
 }
 
 #descargas-content .list-content {
@@ -445,6 +474,10 @@ a:hover, a:active, a:visited, a:focus {
 	display: inline-block;
 }
 
+#descargas-content ul li img {
+	width: 100%;
+}
+
 #smart-download {
 	margin-top: 100px;
 	margin-left: 30px;
@@ -464,15 +497,19 @@ a:hover, a:active, a:visited, a:focus {
 	font-size: 12px;
 }
 
+#descargas-content .note {
+	height: 100%;
+}
+
 #descargas-content .note .paging {
-	bottom: 60px;
+	bottom: 15%;
 }
 
 #descargas-content .note .mascara {
 	position: relative;
 	width: 660px;
-	height: 394px;
-	padding-top: 21px;
+	height: 100%;
+	padding-top: 3.24%;
 }
 
 #descargas-content .note .mascara .note {
@@ -485,6 +522,18 @@ a:hover, a:active, a:visited, a:focus {
 	background-color: transparent;
 	color: #fff;
 }
+
+#note-download {
+	display: block !important;
+	margin-top: 30px;
+}
+
+#note-download a {
+	font-family: 'Gotham';
+	font-size: 12px;
+	margin: 0 10px;
+}
+
 
 /* Modelos */
 
@@ -802,22 +851,3 @@ a:hover, a:active, a:visited, a:focus {
 	opacity: 1;
 }
 
-#principal .animate-home-video {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-#principal .animate-home-video.ng-enter {
-	-webkit-animation: fadeIn .5s;
-	-moz-animation: fadeIn .5s;
-	-ms-animation: fadeIn .5s;
-	animation: fadeIn .5s;
-}
-
-#principal .animate-home-video.ng-leave {
-	-webkit-animation: fadeOut .5s;
-	-moz-animation: fadeOut .5s;
-	-ms-animation: fadeOut .5s;
-	animation: fadeOut .5s;
-}

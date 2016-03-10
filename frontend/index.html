@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="saludalosojosApp" ng-controller="mainController">
+<html lang="en" ng-app="saludalosojosApp" ng-controller="mainController" resize>
   <head>
 
     <base href="/">
@@ -56,7 +56,7 @@
               </div>
             </div>
 
-            <div ng-view></div>
+            <div ng-view class="animate-views"></div>
 
             <div id="home-footer" ng-show="home_active"></div>
           </div>
@@ -111,6 +111,7 @@
     <!-- Directives -->
     <script src="app/directives/loadimage.js"></script>
     <script src="app/directives/classmodelogaleria.js"></script>
+    <script src="app/directives/window.resize.js"></script>
     <!-- / Directives -->
 
   <!-- / Application -->
