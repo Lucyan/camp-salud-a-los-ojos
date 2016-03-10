@@ -498,7 +498,6 @@ a:hover, a:active, a:visited, a:focus {
 
 #modelos .modelo .modelo-container .img img {
 	width: 100%;
-	transition: margin-top .5s;
 	margin-top: -200px;
 }
 
@@ -540,7 +539,7 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 #modelos .modelo .control .btn-control.disabled {
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 #modelos .modelo .control .btn-control:hover {
