@@ -4,7 +4,7 @@
 	<div class="modelo">
 		<div class="modelo-container">
 			<div ng-repeat="value in imgs" class="img">
-				<img ng-src="{{value}}" />
+				<img ng-src="{{value}}" class="img-modelo" ng-mousemove="scrollImage($event)" load-image />
 			</div>
 		</div>
 			

@@ -1,4 +1,4 @@
-saludalosojos.controller("modelosController", function ($scope, $location, $routeParams) {
+saludalosojos.controller("modelosController", function ($scope, $location, $routeParams, $window) {
 
 	var modelos_slug = [
 		"mariana",
@@ -84,4 +84,32 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 			}
 		}
 	}
+
+	$scope.scrollImage = function ($event) {
+		var height_window = angular.element($window).height();
+		var height_footer = angular.element("#site-footer").outerHeight();
+		var height = height_window - height_footer;
+
+		var height_image = angular.element($event.currentTarget).attr("data-height");
+
+		var scroll = ( height / height_image ) * height;
+
+		var point = $event.pageY / height;
+
+		var marginTop = (point * (scroll)) * 8;
+
+		marginTop = marginTop * -1;
+		
+		if (marginTop > 0)
+			marginTop = 0;
+		else {
+			var max = (height_image - height_window) * -1;
+			if (marginTop < max)
+				marginTop = max;
+		}
+
+		angular.element($event.currentTarget).css("margin-top", marginTop);		
+
+	}
+
 });
