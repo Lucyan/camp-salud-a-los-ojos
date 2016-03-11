@@ -4,12 +4,16 @@ saludalosojos.directive('loadImage', function ($window){
      	element.on('load', function () {
      		element.attr("data-width", element.width());
      		element.attr("data-height", element.height());
+            imageToBottom();
      	});
 
      	angular.element($window).bind('resize', function () {
      		element.attr("data-width", element.width());
      		element.attr("data-height", element.height());
+            imageToBottom();
+     	});
 
+        var imageToBottom = function () {
             if (angular.element($window).width() < 768) {
                 var height_window = angular.element($window).height();
 
@@ -18,8 +22,7 @@ saludalosojos.directive('loadImage', function ($window){
                     element.attr("style","margin-top: "+dif+"px!important");
                 }
             }
-     	});
-
+        }
      }
    };
 });

@@ -74,16 +74,20 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 			if ($scope.indeximage > 0) {
 				$scope.indeximage--;
 				jQuery(".img:eq(" + $scope.indeximage + ")").removeClass("next");
-				$timeout(function (){
-					jQuery(".img:eq(" + ($scope.indeximage+1) + ")").find("img").css("margin-top", -200);
-				}, 1000);
+				if (angular.element($window).width() > 767) {
+					$timeout(function (){
+						jQuery(".img:eq(" + ($scope.indeximage+1) + ")").find("img").css("margin-top", -200);
+					}, 1000);
+				}
 			}
 		} else {
 			if ($scope.indeximage < 2) {
 				jQuery(".img:eq(" + $scope.indeximage + ")").addClass("next");
-				$timeout(function (){
-					jQuery(".img:eq(" + ($scope.indeximage-1) + ")").find("img").css("margin-top", -200);
-				}, 1000);
+				if (angular.element($window).width() > 767) {
+					$timeout(function (){
+						jQuery(".img:eq(" + ($scope.indeximage-1) + ")").find("img").css("margin-top", -200);
+					}, 1000);
+				}
 				$scope.indeximage++;
 			}
 		}
