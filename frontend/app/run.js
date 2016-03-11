@@ -118,23 +118,18 @@ saludalosojos.run(function ($rootScope, $location){
 
 	]
 
-	$rootScope.loadImages = function(images, callback) {
+	$rootScope.loadImages = function(images) {
 		if (images.length == 0) {
-			callback();
 			return false;
 		}
 		var url = images.splice(0, 1)[0];
 		var img = new Image();
 		img.onload = function() {
-			$rootScope.loadImages(images, callback);
+			$rootScope.loadImages(images);
 		}
 		img.src = url;
 	}
 
-	$rootScope.loadImages(images, function() {
-		$rootScope.view_video = false;
-		$location.path('/');
-		$rootScope.$apply();
-	});
+	$rootScope.loadImages(images);
 
 });

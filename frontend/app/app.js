@@ -11,9 +11,7 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 	var urlVideo = 'https://www.youtube.com/embed/qKgW7uAj-8U?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
 	var urlMaking = 'https://www.youtube.com/embed/ELQxobMDZQM?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
 
-	$rootScope.view_video = 'load';
-
-	$location.path('/load');
+	$rootScope.view_video = false;
 
 	Cookie.checkCookie({
 		error: function (){
