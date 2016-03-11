@@ -696,19 +696,19 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 .bg.mariana {
-	background: rgb(255,190,65);
+	background: #f8c130;
 }
 
 .bg.ivana {
-	background: rgb(255,74,53);
+	background: #f05030;
 }
 
 .bg.lupe {
-	background: rgb(210,53,69);
+	background: #c33a42;
 }
 
 .bg.dumi {
-	background: rgb(197,214,62);
+	background: #c1d832;
 }
 
 @media (max-width: 767px) {
