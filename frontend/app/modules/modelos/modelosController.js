@@ -1,5 +1,8 @@
 saludalosojos.controller("modelosController", function ($scope, $location, $routeParams, $window, $timeout) {
 
+	angular.element(".modelo-thumbnail.no-active").removeClass("no-active");
+	angular.element(".modelo-thumbnail.active").removeClass("active");
+
 	var modelos_slug = [
 		"mariana",
 		"ivana",
