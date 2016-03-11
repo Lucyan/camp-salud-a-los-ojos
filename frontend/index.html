@@ -38,7 +38,10 @@
     <div id="fb-root"></div>
 
     <div ng-switch on="view_video" id="principal" >
-      <div ng-switch-when="true" class="animate-home-video">
+        <div ng-switch-when="load" class="animate-home-video">
+        <div ng-include="'app/modules/load/index.template.html'" ></div>
+      </div>
+      <div ng-switch-when="video" class="animate-home-video">
         <div ng-include="'app/modules/videos/index.template.html'" ></div>
       </div>
       <div ng-switch-default class="animate-home-video">

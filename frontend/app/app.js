@@ -6,12 +6,14 @@ var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap",
  *  Main App Controller
  **/
 
-saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', '$sce', function ($scope, Cookie, $location, $sce) {
+saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$location', '$sce', function ($scope, $rootScope, Cookie, $location, $sce) {
 
 	var urlVideo = 'https://www.youtube.com/embed/qKgW7uAj-8U?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
 	var urlMaking = 'https://www.youtube.com/embed/ELQxobMDZQM?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
 
-	$scope.view_video = false;
+	$rootScope.view_video = 'load';
+
+	$location.path('/load');
 
 	Cookie.checkCookie({
 		error: function (){
@@ -62,7 +64,7 @@ saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', '$s
 				break;
 		}
 
-		$scope.view_video = true;
+		$rootScope.view_video = 'video';
 	}
 
 	$scope.trustSrc = function() {
@@ -70,6 +72,6 @@ saludalosojos.controller('mainController', ['$scope', 'Cookie', '$location', '$s
 	}
 
 	$scope.closeVideo = function() {
-		$scope.view_video = false;
+		$rootScope.view_video = false;
 	}
 }]);
