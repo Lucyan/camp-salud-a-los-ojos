@@ -183,6 +183,19 @@ a:hover, a:active, a:visited, a:focus {
 		text-align: center!important;
 		margin-bottom: 20px;
 	}
+
+	#agegate {
+		padding: 20px 10px;
+		padding-top: 40%;
+		margin-top: 0px;
+		background: url(../img/home/bg-movil.png);
+		background-size: 100%;
+		height: 100%;
+	}
+
+	#agegate img {
+		max-width: 100%;
+	}
 }
 
 /* Home Footer */
@@ -280,6 +293,124 @@ a:hover, a:active, a:visited, a:focus {
 
 #menu .redes > a.facebook {
 	padding-right: 8px;
+}
+
+#menu .movil-icon {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	width: 34px;
+	height: 33px;
+	background: url(../img/menu/movil-icon.png);
+	background-position: 34px 0px;
+}
+
+@media screen and (max-width: 767px) {
+	#menu {
+		background-color: #D61E19;
+		top: 0px;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		padding: 10px 20px;
+		transition: left .3s;
+	}
+
+	#menu.open {
+		left: 0;
+	}
+
+	#menu .top-menu {
+		position: fixed;
+		top: 20px;
+		left: 10px;
+		width: 100%;
+	}
+
+	#menu img.logo {
+		display: block;
+		margin: 0 auto;
+	}
+
+	#menu .movil-icon {
+		display: block;
+	}
+
+	#menu.open .movil-icon {
+		background-position: 0px 0px;
+	}
+
+	#menu .options {
+		margin-top: 70px;
+		max-height: initial !important;
+	}
+
+	#menu ul {
+		padding-left: 70px;
+	}
+
+	#menu ul li {
+		margin-bottom: 30px;
+	}
+
+	#menu ul li:before {
+		content: url(../img/menu/icons/home.png);
+		left: -50px;
+		top: -10px;
+		position: absolute;
+	}
+
+	#menu ul li:hover:before, #menu ul li.active:before {
+		content: url(../img/menu/icons/home-active.png);
+		left: -50px;
+    	top: -10px;
+	}
+
+	#menu ul li.galeria:before {
+		content: url(../img/menu/icons/galeria.png);
+	}
+
+	#menu ul li.galeria:hover:before, #menu ul li.galeria.active:before {
+		content: url(../img/menu/icons/galeria-active.png);
+	}
+
+	#menu ul li.video:before {
+		content: url(../img/menu/icons/video.png);
+	}
+
+	#menu ul li.video:hover:before, #menu ul li.video.active:before {
+		content: url(../img/menu/icons/video-active.png);
+	}
+
+	#menu ul li.making:before {
+		content: url(../img/menu/icons/making.png);
+	}
+
+	#menu ul li.making:hover:before, #menu ul li.making.active:before {
+		content: url(../img/menu/icons/making-active.png);
+	}
+
+	#menu ul li.descargas:before {
+		content: url(../img/menu/icons/descargas.png);
+	}
+
+	#menu ul li.descargas:hover:before, #menu ul li.descargas.active:before {
+		content: url(../img/menu/icons/descargas-active.png);
+	}
+
+	#menu .redes {
+		position: absolute;
+		left: 0px;
+		bottom: 20px;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	#menu .redes a {
+		margin: 0 10px;
+	}
 }
 
 /* 404 */
@@ -882,7 +1013,12 @@ a:hover, a:active, a:visited, a:focus {
 	opacity: 1;
 }
 
-
+@media screen and (max-width: 767px) {
+	#videos .close {
+		opacity: 1;
+		font-size: 40px;
+	}
+}
 
 /* Loading */
 

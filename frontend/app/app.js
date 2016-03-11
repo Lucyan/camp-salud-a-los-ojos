@@ -33,6 +33,8 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 				$scope.show_menu = true;
 			}
 		}
+
+		$('#menu').removeClass('open');
 	});
 
 	$scope.range = function(min, max, step) {
@@ -71,5 +73,14 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 
 	$scope.closeVideo = function() {
 		$rootScope.view_video = false;
+	}
+
+
+	$scope.toggleMovilMenu = function() {
+		if ($('#menu').hasClass('open')) {
+			$('#menu').removeClass('open');
+		} else {
+			$('#menu').addClass('open')
+		}
 	}
 }]);
