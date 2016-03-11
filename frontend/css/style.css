@@ -415,6 +415,10 @@ a:hover, a:active, a:visited, a:focus {
 	background-position: 37px 0px;
 }
 
+#descargas-content .control .boton[disabled]:hover {
+	background-position: 0px 0px;
+}
+
 #descargas-content .control .boton[disabled] {
 	opacity: .5;
 	cursor: default;
