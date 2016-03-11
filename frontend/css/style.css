@@ -118,6 +118,7 @@ a:hover, a:active, a:visited, a:focus {
 	position: absolute;
 	top: 0px;
 	left: 0px;
+	background-color: #fff;
 }
 
 .bg-video * {
@@ -135,11 +136,11 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 @keyframes bgchange {
-	0% {background: rgba(255,74,53,0.80);}
-	25% {background: rgba(255,190,65,0.80);}
-	50% {background: rgba(197,214,62,0.80);}
+	0% {background: rgba(255,84,37,0.80);}
+	25% {background: rgba(255,214,26,0.80);}
+	50% {background: rgba(193,218,10,0.80);}
 	75% {background: rgba(210,53,69,0.80);}
-	100% {background: rgba(255,74,53,0.80);}
+	100% {background: rgba(255,84,37,0.80);}
 }
 
 /* Botones */
@@ -698,6 +699,17 @@ a:hover, a:active, a:visited, a:focus {
 	font-family: 'Gotham';
 	font-size: 12px;
 	margin: 0 10px;
+}
+
+
+@media screen and (max-width: 767px) {
+	#descargas {
+		padding-top: 80px;
+	}
+
+	#descargas-content .list-content {
+		overflow: initial;
+	}
 }
 
 
