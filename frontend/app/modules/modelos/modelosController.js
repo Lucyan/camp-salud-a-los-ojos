@@ -70,6 +70,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 	$scope.indeximage = 0;
 
 	var scrollImage = function (element, pageY) {
+		element = $(element).children('img')[0];
 
 		if (angular.element($window).width() > 767) {
 			var height_window = angular.element($window).height();

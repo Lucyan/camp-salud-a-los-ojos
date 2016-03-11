@@ -709,6 +709,16 @@ a:hover, a:active, a:visited, a:focus {
 	position: absolute;
 }
 
+#modelos .velo-negro {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.05;
+}
+
 #modelos .modelo {
 	width: 100%;
 	height: 100%;
@@ -727,6 +737,7 @@ a:hover, a:active, a:visited, a:focus {
 	width: 33.3333333%;
 	margin-left: 0%;
 	transition: margin-left 1s;
+	position: relative;
 }
 
 #modelos .modelo .modelo-container .img.next {
