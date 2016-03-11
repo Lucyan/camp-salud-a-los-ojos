@@ -3,7 +3,7 @@
 	<div class="modelo">
 		<div class="modelo-container">
 			<div ng-repeat="value in imgs" class="img">
-				<img ng-src="{{value}}" class="img-modelo" ng-mousemove="scrollImage($event)" load-image />
+				<img ng-src="{{value}}" class="img-modelo" ng-mousemove="scrollImage($event)" load-image ng-swipe-left="control('right')" ng-swipe-right="control('left')" />
 			</div>
 		</div>
 			
