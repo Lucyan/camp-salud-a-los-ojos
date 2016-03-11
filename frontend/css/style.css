@@ -354,6 +354,10 @@ a:hover, a:active, a:visited, a:focus {
 		margin-bottom: 30px;
 	}
 
+	#menu ul li.active a {
+		text-decoration: underline;
+	}
+
 	#menu ul li:before {
 		content: url(../img/menu/icons/home.png);
 		left: -50px;
