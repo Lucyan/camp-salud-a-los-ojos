@@ -396,13 +396,26 @@ a:hover, a:active, a:visited, a:focus {
 	width: 100%;
 }
 
-#descargas-content .control img {
+#descargas-content .control .boton {
+	background: url(../modelos/cleft.png);
+	width: 37px;
+	height: 43px;
+	background-position: 0px 0px;
 	cursor: pointer;
 	opacity: 1;
 	transition: opacity .3s;
+	display: inline-block;
 }
 
-#descargas-content .control img[disabled] {
+#descargas-content .control .boton.right {
+	background: url(../modelos/cright.png);
+}
+
+#descargas-content .control .boton:hover {
+	background-position: 37px 0px;
+}
+
+#descargas-content .control .boton[disabled] {
 	opacity: .5;
 	cursor: default;
 }
@@ -460,6 +473,10 @@ a:hover, a:active, a:visited, a:focus {
 	display: inline-block;
 }
 
+#descargas-content .note .list-content {
+	max-height: 90%;
+}
+
 #descargas-content ul {
 	list-style: none;
 	padding: 0px;
@@ -490,11 +507,17 @@ a:hover, a:active, a:visited, a:focus {
 	right: -30px;
 }
 
-#smart-download .btn {
+#descargas .btn {
 	margin-top: 30px;
+	background-color: transparent;
+	color: #fff;
+	font-size: 12px;
+	transition: all .3s;
+}
+
+#descargas .btn:hover {
 	background-color: #FFFFFF;
 	color: #D61E19;
-	font-size: 12px;
 }
 
 #descargas-content .note {
@@ -516,11 +539,6 @@ a:hover, a:active, a:visited, a:focus {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-}
-
-#smart-download .btn {
-	background-color: transparent;
-	color: #fff;
 }
 
 #note-download {
