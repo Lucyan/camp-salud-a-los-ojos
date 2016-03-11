@@ -69,42 +69,18 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 
 	$scope.indeximage = 0;
 
-	$scope.control = function (move) {	
-		if (move == "left") {
-			if ($scope.indeximage > 0) {
-				$scope.indeximage--;
-				jQuery(".img:eq(" + $scope.indeximage + ")").removeClass("next");
-				if (angular.element($window).width() > 767) {
-					$timeout(function (){
-						jQuery(".img:eq(" + ($scope.indeximage+1) + ")").find("img").css("margin-top", -200);
-					}, 1000);
-				}
-			}
-		} else {
-			if ($scope.indeximage < 2) {
-				jQuery(".img:eq(" + $scope.indeximage + ")").addClass("next");
-				if (angular.element($window).width() > 767) {
-					$timeout(function (){
-						jQuery(".img:eq(" + ($scope.indeximage-1) + ")").find("img").css("margin-top", -200);
-					}, 1000);
-				}
-				$scope.indeximage++;
-			}
-		}
-	}
-
-	$scope.scrollImage = function ($event) {
+	var scrollImage = function (element, pageY) {
 
 		if (angular.element($window).width() > 767) {
 			var height_window = angular.element($window).height();
 			var height_footer = angular.element("#site-footer").outerHeight();
 			var height = height_window - height_footer;
 
-			var height_image = angular.element($event.currentTarget).attr("data-height");
+			var height_image = angular.element(element).attr("data-height");
 
 			var scroll = ( height / height_image ) * height;
 
-			var point = $event.pageY / height;
+			var point = pageY / height;
 
 			var marginTop = (point * (scroll)) * 8;
 
@@ -117,9 +93,31 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				if (marginTop < max)
 					marginTop = max;
 			}
-
-			angular.element($event.currentTarget).css("margin-top", marginTop);
+			angular.element(element).css("margin-top", marginTop);
 		}
+	}
+
+	$scope.control = function (move, $event) {
+
+		if (move == "left") {
+			if ($scope.indeximage > 0) {
+				var img = jQuery(".img:eq(" + $scope.indeximage + ")").find("img")[0];
+				scrollImage(img, $event.pageY);
+				$scope.indeximage--;
+				jQuery(".img:eq(" + $scope.indeximage + ")").removeClass("next");
+			}
+		} else {
+			if ($scope.indeximage < 2) {
+				jQuery(".img:eq(" + $scope.indeximage + ")").addClass("next");
+				$scope.indeximage++;
+				var img = jQuery(".img:eq(" + $scope.indeximage + ")").find("img")[0];
+				scrollImage(img, $event.pageY);
+			}
+		}
+	}
+
+	$scope.scrollImage = function ($event) {
+		scrollImage($event.currentTarget, $event.pageY);
 	}
 
 	$scope.openmodal = function (){
