@@ -75,6 +75,7 @@ saludalosojos.run(function ($rootScope, $location){
 		'img/descargas/pin.png',
 		'img/descargas/smart/phone.png',
 		'img/descargas/pin.png',
+		'img/descargas/rombos.png',
 
 		/* Footer */
 
