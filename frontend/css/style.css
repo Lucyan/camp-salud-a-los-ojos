@@ -189,7 +189,7 @@ a:hover, a:active, a:visited, a:focus {
 		padding-top: 40%;
 		margin-top: 0px;
 		background: url(../img/home/bg-movil.png);
-		background-size: 100%;
+		background-size: cover;
 		height: 100%;
 	}
 
