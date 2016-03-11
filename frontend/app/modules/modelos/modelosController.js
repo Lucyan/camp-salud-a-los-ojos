@@ -82,7 +82,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 
 			var point = pageY / height;
 
-			var marginTop = (point * (scroll)) * 8;
+			var marginTop = (point * (scroll)) * 6.5;
 
 			marginTop = marginTop * -1;
 			
