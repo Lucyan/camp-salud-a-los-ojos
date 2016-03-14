@@ -1,6 +1,13 @@
 saludalosojos.controller('descargas.controller', function($scope, $window) {
 	$scope.option_active = 'smart';
 
+	var $window = angular.element($window);
+
+	if ($window.width() < 768)
+		$scope.imgCalendar = 'img/descargas/calendar-movil.png';
+	else
+		$scope.imgCalendar = 'img/descargas/calendar.png';
+
 	var smartImgWidht = 200;
 
 	var smart = [
@@ -88,7 +95,15 @@ saludalosojos.controller('descargas.controller', function($scope, $window) {
 			default:
 				var originalMascaraWidth = 225;
 				var originalMascaraHeight = 481;
-				var originalFotoWidht = smartImgWidht;
+
+				if ($window.width() < 768) {
+					var originalFotoWidht = 230;
+					$scope.imgCalendar = 'img/descargas/calendar-movil.png';
+				} else {
+					var originalFotoWidht = smartImgWidht;
+					$scope.imgCalendar = 'img/descargas/calendar.png';
+				}
+				
 				var espacio = 200;
 				break;
 		}
@@ -141,11 +156,7 @@ saludalosojos.controller('descargas.controller', function($scope, $window) {
 		$scope.page = page;
 	}
 
-
-
-
-	var w = angular.element($window);
-	w.bind('resize', function () {
+	$window.bind('resize', function () {
 		$scope.setSize();
         $scope.$apply();
     });

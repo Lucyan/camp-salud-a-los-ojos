@@ -1,14 +1,34 @@
 <div class="calendar" >
-	<img src="img/descargas/calendar.png">
+	<img ng-src="{{imgCalendar}}">
+	<p class="info">
+		Descarga nuestro
+		calendario "Salud a los
+		ojos 2016" en formato
+		digital.
+	</p>
 </div>
 
-<div id="smart-download" class="text-left calendar">
-	<p>
+<div id="smart-download" class="text-left">
+	<p class="hidden-xs">
 		Descarga nuestro<br/>
 		calendario "Salud a los<br/>
 		ojos 2016" en formato<br/>
 		digital.
 	</p>
-	<img src="img/descargas/linea.png" class="linea">
+	<img src="img/descargas/linea.png" class="linea hidden-xs">
 	<a class="btn pull-right" ng-href="/" target="_blank" download="calendario2016.pdf">Descargar PDF</a>
+</div>
+
+<div id="send-email">
+	<div>
+		<img src="img/descargas/separador.png">
+	</div>
+	<p>
+		Enviar PDF por correo electrónico:
+	</p>
+
+	<form ng-submit="sendEmail();">
+		<input type="text" placeholder="E-Mail"></input>
+		<input type="submit" class="btn" value="Enviar"></input>
+	</form>
 </div>
