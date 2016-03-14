@@ -962,6 +962,10 @@ a:hover, a:active, a:visited, a:focus {
 	opacity: 0.8;
 }
 
+#modelos .thumbnails ul li a {
+	font-size: 10px;
+}
+
 #modelos .thumbnails ul li.modelo-thumbnail:hover, #modelos .thumbnails ul li.modelo-thumbnail.active {
 	opacity: 1;
 }
