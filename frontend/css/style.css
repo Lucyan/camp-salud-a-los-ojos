@@ -783,6 +783,7 @@ a:hover, a:active, a:visited, a:focus {
 
 	#descargas-content .celular .mascara {
 		padding-top: 0px;
+		margin: 0px auto;
 	}
 
 	#descargas-content .celular .paging {
@@ -838,7 +839,11 @@ a:hover, a:active, a:visited, a:focus {
 		position: relative;
 		float: left;
 		overflow: hidden;
-	}  
+	}
+
+	#descargas-content .include-content > * {
+		display: block;
+	}
 }
 
 
