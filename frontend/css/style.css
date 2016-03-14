@@ -565,6 +565,10 @@ a:hover, a:active, a:visited, a:focus {
 	vertical-align: top;
 }
 
+#descargas-content .include-content.cal {
+	margin-top: 15px;
+}
+
 #descargas-content .include-content > * {
 	vertical-align: top;
 	display: inline-block;
@@ -745,6 +749,7 @@ a:hover, a:active, a:visited, a:focus {
 	width: 40%;
 	padding: 0 10px;
 	padding-top: 50px;
+	margin-top: 0px;
 }
 
 #send-email {
