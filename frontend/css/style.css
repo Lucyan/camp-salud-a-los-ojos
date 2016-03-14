@@ -22,12 +22,6 @@ html, body {
 	height: 100%;
 }
 
-
-body.landscape {
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-}
-
 .tpl-view {
 	position: relative;
 }
