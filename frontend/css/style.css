@@ -277,6 +277,10 @@ a:hover, a:active, a:visited, a:focus {
 	margin-bottom: 15px;
 }
 
+#menu ul li a {
+	font-size: 12px;
+}
+
 #menu ul li:hover:before, #menu ul li.active:before {
 	display: block;
 	position: absolute;
