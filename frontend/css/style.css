@@ -276,7 +276,7 @@ a:hover, a:active, a:visited, a:focus {
 
 #menu ul li {
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 19px;
 }
 
 #menu ul li a {
@@ -293,7 +293,7 @@ a:hover, a:active, a:visited, a:focus {
 }
 
 #menu .redes {
-	margin-top: 40px;
+	margin-top: 22px;
 }
 
 #menu .redes > a {
@@ -426,6 +426,14 @@ a:hover, a:active, a:visited, a:focus {
 
 	#menu ul li.descargas:hover:before, #menu ul li.descargas.active:before {
 		content: url(../img/menu/icons/descargas-active.png);
+	}
+
+	#menu ul li.concursos:before {
+		content: url(../img/menu/icons/concursos.png);
+	}
+
+	#menu ul li.concursos:hover:before, #menu ul li.concursos.active:before {
+		content: url(../img/menu/icons/concursos-active.png);
 	}
 
 	#menu .redes {
@@ -705,7 +713,7 @@ a:hover, a:active, a:visited, a:focus {
 	font-size: 12px;
 	transition: all .3s;
 	position: absolute; 
-	right: 20px; 
+	right: 33px; 
 	top: 185px;
 }
 
@@ -744,6 +752,11 @@ a:hover, a:active, a:visited, a:focus {
 	font-family: 'Gotham';
 	font-size: 12px;
 	margin: 0 10px;
+	opacity: 0.8;
+}
+
+#note-download a:hover {
+	opacity: 1;
 }
 
 #descargas-content .include-content.cal .calendar .info {
@@ -975,7 +988,7 @@ a:hover, a:active, a:visited, a:focus {
 	transition: all 0.3s;
 	margin-bottom: 20px;
 	text-align: right;
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 #modelos .thumbnails ul li a {
@@ -1220,4 +1233,18 @@ a:hover, a:active, a:visited, a:focus {
 #loading img {
 	margin-top: 20%;
 	width: initial !important;
+}
+
+/* Concursos */
+
+#concursos {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/404/bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: #DE1F0D;
+	padding-top: 40px;
+	vertical-align: top;
 }

@@ -13,7 +13,7 @@
 		<div class="boton" ng-click="prevPage();" ng-disabled="page < 2"></div>
 		<div class="pull-right boton right" ng-click="nextPage();" ng-disabled="page >= imageList.length"></div>
 	</div>
-	<div class="paging">
+	<div class="paging hidden-xs">
 		<img ng-repeat="n in range(1, imageList.length)" src="img/descargas/pin.png" ng-class="{active: n == page}" ng-click="goPage(n)">
 	</div>
 </div>
