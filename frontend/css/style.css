@@ -292,18 +292,26 @@ a:hover, a:active, a:visited, a:focus {
 
 #menu .redes > a {
 	margin-right: 10px;
-	padding-left: 8px;
-	padding-right: 1px;
-	padding-top: 2px;
-	font-size: 14px;
 }
 
-#menu .redes > a.twitter {
-	padding-left: 6px;
+#menu .redes a .icon {
+	width: 20px;
+	height: 23px;
+	background: url(../img/redes/youtube.png);
+	background-position: 0px 0px;
+	display: inline-block;
 }
 
-#menu .redes > a.facebook {
-	padding-right: 8px;
+#menu .redes a.twitter .icon {
+	background: url(../img/redes/twitter.png);
+}
+
+#menu .redes a.facebook .icon {
+	background: url(../img/redes/facebook.png);
+}
+
+#menu .redes a .icon:hover {
+	background-position: 20px 0px;
 }
 
 #menu .movil-icon {
@@ -425,6 +433,20 @@ a:hover, a:active, a:visited, a:focus {
 
 	#menu .redes a {
 		margin: 0 10px;
+	}
+
+	#menu .redes a .icon {
+		background: url(../img/redes/youtube-movil.png);
+		width: 32px;
+		height: 36px;
+	}
+
+	#menu .redes a.twitter .icon {
+		background: url(../img/redes/twitter-movil.png);
+	}
+
+	#menu .redes a.facebook .icon {
+		background: url(../img/redes/facebook-movil.png);
 	}
 }
 
