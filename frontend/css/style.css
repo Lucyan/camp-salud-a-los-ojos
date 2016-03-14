@@ -206,6 +206,8 @@ a:hover, a:active, a:visited, a:focus {
 
 	#agegate section p {
 		margin-bottom: 40px;
+		margin-left: -15px;
+		margin-right: -15px;
 	}
 }
 
