@@ -1188,6 +1188,11 @@ a:hover, a:active, a:visited, a:focus {
 	opacity: .3;
 	transition: opacity .3s;
 	cursor: pointer;
+	width: 30px;
+}
+
+#videos .close img {
+	width: 100%;
 }
 
 #videos .close:hover {
