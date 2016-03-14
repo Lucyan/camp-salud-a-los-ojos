@@ -698,6 +698,9 @@ a:hover, a:active, a:visited, a:focus {
 	color: #fff;
 	font-size: 12px;
 	transition: all .3s;
+	position: absolute; 
+	right: 20px; 
+	top: 185px;
 }
 
 #descargas .btn:hover {
@@ -773,6 +776,12 @@ a:hover, a:active, a:visited, a:focus {
 		padding-top: 80px;
 		min-height: 100%;
 		height: auto;
+	}
+
+	#descargas .btn {
+		position: relative;
+		top: 0px;
+		right: 0px;
 	}
 
 	#descargas-content .list-content {
