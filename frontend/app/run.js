@@ -134,7 +134,7 @@ saludalosojos.run(function ($rootScope, $location){
 	$rootScope.loadImages(images);
 
 	window.addEventListener('orientationchange', function() {
-		if (window.innerHeight > window.innerWidth) {
+		if (window.innerHeight < window.innerWidth) {
 			$('body').addClass('landscape');
 		} else {
 			$('body').removeClass('landscape');
