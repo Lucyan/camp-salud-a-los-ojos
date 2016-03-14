@@ -837,6 +837,7 @@ a:hover, a:active, a:visited, a:focus {
 	#descargas-content .animate-descargas {
 		position: relative;
 		float: left;
+		overflow: hidden;
 	}  
 }
 
