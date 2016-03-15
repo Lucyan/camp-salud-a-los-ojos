@@ -11,7 +11,6 @@ body {
 @media screen and (max-width: 767px) {
 	body, html {
 		overflow: initial;
-		-webkit-overflow-scrolling: touch;
 	}
 }
 
@@ -21,10 +20,6 @@ html, body {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-}
-
-#content .animate-views > * {
-	-webkit-overflow-scrolling: touch;
 }
 
 .tpl-view {
@@ -186,6 +181,10 @@ a:hover, a:active, a:visited, a:focus {
 	margin-bottom: 40px;
 }
 
+#agegate header img {
+	width: 450px;
+}
+
 #agegate section p {
 	margin-bottom: 20px;
 	font-size: 1.2em;
@@ -207,6 +206,7 @@ a:hover, a:active, a:visited, a:focus {
 	}
 
 	#agegate img {
+		width: auto;
 		max-width: 100%;
 	}
 
