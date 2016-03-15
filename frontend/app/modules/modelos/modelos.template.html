@@ -2,7 +2,7 @@
 
 	<div class="modelo">
 		<div class="modelo-container">
-			<div ng-repeat="value in imgs" class="img" ng-mousemove="scrollImage($event)" ng-swipe-left="control('right', $event)" ng-swipe-right="control('left', $event)">
+			<div ng-repeat="value in imgs" class="img" ng-swipe-left="control('right', $event)" ng-swipe-right="control('left', $event)">
 				<img ng-src="{{value}}" class="img-modelo" load-image />
 				<div class="velo-negro"></div>
 			</div>

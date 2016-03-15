@@ -6,7 +6,7 @@ var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap",
  *  Main App Controller
  **/
 
-saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$location', '$sce', function ($scope, $rootScope, Cookie, $location, $sce) {
+saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$location', '$sce', '$window', function ($scope, $rootScope, Cookie, $location, $sce, $window) {
 
 	var urlVideo = 'https://www.youtube.com/embed/qKgW7uAj-8U?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
 	var urlMaking = 'https://www.youtube.com/embed/ELQxobMDZQM?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
@@ -82,5 +82,9 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 		} else {
 			$('#menu').addClass('open')
 		}
+	}
+
+	$scope.scrollImage = function($event) {
+		$scope.pageY = ($event.pageY * 100) / angular.element($window).height();
 	}
 }]);

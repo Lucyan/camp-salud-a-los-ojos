@@ -1,5 +1,7 @@
 saludalosojos.controller("modelosController", function ($scope, $location, $routeParams, $window, $timeout) {
 
+	var timeID = null;
+
 	angular.element(".modelo-thumbnail.no-active").removeClass("no-active");
 	angular.element(".modelo-thumbnail.active").removeClass("active");
 
@@ -69,33 +71,39 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 
 	$scope.indeximage = 0;
 
-	var scrollImage = function (element, pageY) {
-		element = $(element).children('img')[0];
+	$scope.$watch('pageY', function(newValue, oldValue) {
+		scrollImage(newValue);
+	});
 
+	var scrollImage = function (pageY) {
 		if (angular.element($window).width() > 767) {
-			var height_window = angular.element($window).height();
-			var height_footer = angular.element("#site-footer").outerHeight();
-			var height = height_window - height_footer;
+			var imgHeight = $('#modelos .img-modelo').height() - angular.element($window).height();
+			if (imgHeight > 0) {
+				if (pageY < 60) {
+					var posMargin = (pageY * 100) / 60;
+					imgHeight = (imgHeight * 20) / 100;
+				} else {
+					var posMargin = pageY;
+				}
 
-			var height_image = angular.element(element).attr("data-height");
+				var finalPos = (imgHeight * posMargin) / 100;
 
-			var scroll = ( height / height_image ) * height;
+				$('#modelos .img-modelo').css('margin-top', finalPos * -1);
 
-			var point = pageY / height;
+				if (timeID != null) {
+					clearTimeout(timeID);
+					$('#modelos .img-modelo').removeClass('up');
+				}
 
-			var marginTop = (point * (scroll)) * 6.5;
-
-			marginTop = marginTop * -1;
-			
-			if (marginTop > 0)
-				marginTop = 0;
-			else {
-				var max = (height_image - height_window) * -1;
-				if (marginTop < max)
-					marginTop = max;
+				timeID = setTimeout(function() {
+					$('#modelos .img-modelo').addClass('up').css('margin-top', '-200px');
+				}, 3000)
 			}
-			angular.element(element).css("margin-top", marginTop);
 		}
+	}
+
+	if ($scope.pageY != undefined) {
+		scrollImage($scope.pageY);
 	}
 
 	$scope.control = function (move, $event) {
@@ -115,10 +123,6 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				scrollImage(img, $event.pageY);
 			}
 		}
-	}
-
-	$scope.scrollImage = function ($event) {
-		scrollImage($event.currentTarget, $event.pageY);
 	}
 
 	$scope.openmodal = function (){
