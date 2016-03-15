@@ -133,4 +133,8 @@ saludalosojos.run(function ($rootScope, $location){
 
 	$rootScope.loadImages(images);
 
+	document.ontouchmove = function(event){
+		event.preventDefault();
+	}
+
 });
