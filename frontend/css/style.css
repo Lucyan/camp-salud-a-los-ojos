@@ -1245,6 +1245,100 @@ a:hover, a:active, a:visited, a:focus {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-color: #DE1F0D;
-	padding-top: 40px;
+	padding-top: 9%;
 	vertical-align: top;
+}
+
+#concursos > * {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#concursos .imagen {
+	width: 32%;
+	position: relative;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+#concursos .imagen img.gif {
+	width: 87%;
+}
+
+#concursos .imagen img.botella {
+	position: absolute;
+	right: -42px;
+	bottom: -60px;
+	width: 43%;
+}
+
+#concursos .side {
+	position: relative;
+	margin-top: 5%;
+}
+
+#concursos .side p {
+	font-size: 14px;
+}
+
+#concursos .side .linea {
+	position: absolute;
+	top: 10px;
+	right: -100px;
+}
+
+#concursos .redes {
+	margin-top: 40px;
+}
+
+#concursos .redes a {
+	margin-right: 15px;
+}
+
+#concursos .redes .icon {
+	width: 45px;
+	height: 51px;
+	display: inline-block;
+	background: url(../img/concursos/twitter.png);
+	background-position: 0px 0px;
+	transition: background-position .15s;
+}
+
+#concursos .redes .icon.facebook {
+	background: url(../img/concursos/facebook.png);
+}
+
+#concursos .redes .icon:hover {
+	background-position: 0px -51px;
+}
+
+@media screen and (max-width: 767px) {
+	#concursos {
+		padding-top: 25%;
+		height: auto;
+		min-height: 100%;
+	}
+
+	#concursos > * {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	#concursos .imagen {
+		width: 84%;
+	}
+
+	#concursos .side {
+		margin-top: 25%;
+		padding: 0 10px;
+	}
+
+	#concursos .side .redes {
+		margin-top: 30px;
+	}
+
+	#concursos .side .redes, #concursos .side p {
+		text-align: center;
+	}
 }
