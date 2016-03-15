@@ -401,10 +401,11 @@ a:hover, a:active, a:visited, a:focus {
 
 	#menu ul {
 		padding-left: 70px;
+		margin-top: 10px;
 	}
 
 	#menu ul li {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 
 	#menu ul li.active a {
