@@ -813,6 +813,7 @@ a:hover, a:active, a:visited, a:focus {
 	border-radius: 4px;
 	text-align: center;
 	border: none;
+	color: #000;
 }
 
 #send-email p {
