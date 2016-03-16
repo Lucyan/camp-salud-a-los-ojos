@@ -81,6 +81,7 @@ a:hover, a:active, a:visited, a:focus {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	-webkit-overflow-scrolling: touch;
 }
 
 #principal .animate-home-video.ng-enter {
