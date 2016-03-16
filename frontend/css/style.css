@@ -610,6 +610,7 @@ a:hover, a:active, a:visited, a:focus {
 
 #descargas-content .include-content.cal {
 	margin-top: 15px;
+	width: 100%;
 }
 
 #descargas-content .include-content > * {
@@ -732,11 +733,12 @@ a:hover, a:active, a:visited, a:focus {
 	margin-top: 100px;
 	margin-left: 30px;
 	min-width: 240px;
+	position: relative;
 }
 
 #smart-download img.linea {
 	position: absolute;
-	top: 90px;
+	top: 0px;
 	right: -30px;
 }
 
@@ -748,7 +750,7 @@ a:hover, a:active, a:visited, a:focus {
 	transition: all .3s;
 	position: absolute; 
 	right: 33px; 
-	top: 185px;
+	top: 90px;
 }
 
 #descargas .btn:hover {
@@ -799,6 +801,14 @@ a:hover, a:active, a:visited, a:focus {
 	padding: 0 10px;
 	padding-top: 50px;
 	margin-top: 0px;
+}
+
+#descargas-content .include-content.cal .calendar {
+	width: 33%;
+}
+
+#descargas-content .include-content.cal .calendar img {
+	width: 100%;
 }
 
 #send-email {
@@ -889,6 +899,7 @@ a:hover, a:active, a:visited, a:focus {
 	#descargas-content .include-content.cal .calendar img {
 		display: inline-block;
 		margin-top: -50px;
+		width: initial;
 	}
 
 	#descargas-content .include-content.cal .calendar .info {
