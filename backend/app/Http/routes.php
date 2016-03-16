@@ -14,3 +14,10 @@
 $app->get('/', function() use ($app) {
     return $app->welcome();
 });
+
+$app->group(['prefix' => 'mail', 'namespace' => 'App\Http\Controllers'], function ($app) {
+	$app->post('send', [
+		'as' => 'sendMail',
+		'uses' => 'MailController@send'
+	]);
+});

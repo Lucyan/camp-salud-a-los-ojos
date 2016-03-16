@@ -1,4 +1,4 @@
-saludalosojos.controller('descargas.controller', function($scope, $window) {
+saludalosojos.controller('descargas.controller', function($scope, $window, $http) {
 	$scope.option_active = 'smart';
 
 	var $window = angular.element($window);
@@ -158,6 +158,19 @@ saludalosojos.controller('descargas.controller', function($scope, $window) {
 
 	$scope.goPage = function(page) {
 		$scope.page = page;
+	}
+
+	$scope.sendDisabled = false;
+
+	$scope.sendEmail = function() {
+		var email = $('input[name="email"]').val();
+		$scope.sendDisabled = true;
+		if (email != '') {
+			$http.post('/api/mail/send', { email: email }).then(function(response) {
+				alert('Calendario Enviado por Mail');
+				$scope.sendDisabled = false;
+			});
+		}
 	}
 
 	$window.bind('resize', function () {

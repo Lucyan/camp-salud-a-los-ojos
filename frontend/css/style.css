@@ -815,7 +815,7 @@ a:hover, a:active, a:visited, a:focus {
 	height: 40px;
 }
 
-#send-email form input[type="text"] {
+#send-email form input[name="email"] {
 	border-radius: 4px;
 	text-align: center;
 	border: none;

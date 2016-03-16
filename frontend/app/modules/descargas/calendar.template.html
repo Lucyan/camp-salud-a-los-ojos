@@ -28,7 +28,7 @@
 	</p>
 
 	<form ng-submit="sendEmail();">
-		<input type="text" placeholder="E-Mail"></input>
-		<input type="submit" class="btn" value="Enviar"></input>
+		<input type="email" placeholder="E-Mail" name="email"></input>
+		<input type="submit" class="btn" value="Enviar" ng-disabled="sendDisabled"></input>
 	</form>
 </div>
