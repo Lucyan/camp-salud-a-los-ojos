@@ -47,7 +47,7 @@ saludalosojos.controller('descargas.controller', function($scope, $window) {
 			}
 		},
 		{
-			url: 'img/descargas/note/wallpapers/1024x768/Dumi-wallpaper-1024x768.jpg',
+			url: 'img/descargas/note/wallpapers/note/Notebook-descargas-4-dumi.jpg',
 			name: 'Dumi-wallpaper.jpg',
 			download: {
 				url1920: 'img/descargas/note/wallpapers/1920x1080/Dumi-wallpaper-1920x1080.jpg',
@@ -57,7 +57,7 @@ saludalosojos.controller('descargas.controller', function($scope, $window) {
 			}
 		},
 		{
-			url: 'img/descargas/note/wallpapers/1024x768/Ivana-wallpaper-1024x768.jpg',
+			url: 'img/descargas/note/wallpapers/note/Notebook-descargas-2-ivana.jpg',
 			name: 'Ivana-wallpaper.jpg',
 			download: {
 				url1920: 'img/descargas/note/wallpapers/1920x1080/Ivana-wallpaper-1920x1080.jpg',
@@ -67,7 +67,7 @@ saludalosojos.controller('descargas.controller', function($scope, $window) {
 			}
 		},
 		{
-			url: 'img/descargas/note/wallpapers/1024x768/Lupe-wallpaper-1024x768.jpg',
+			url: 'img/descargas/note/wallpapers/note/Notebook-descargas-3-lupe.jpg',
 			name: 'Lupe-wallpaper.jpg',
 			download: {
 				url1920: 'img/descargas/note/wallpapers/1920x1080/Lupe-wallpaper-1920x1080.jpg',
@@ -77,7 +77,7 @@ saludalosojos.controller('descargas.controller', function($scope, $window) {
 			}
 		},
 		{
-			url: 'img/descargas/note/wallpapers/1024x768/Mariana-wallpaper-1024x768.jpg',
+			url: 'img/descargas/note/wallpapers/note/Notebook-descargas-1-mariana.jpg',
 			name: 'Mariana-wallpaper.jpg',
 			download: {
 				url1920: 'img/descargas/note/wallpapers/1920x1080/Mariana-wallpaper-1920x1080.jpg',

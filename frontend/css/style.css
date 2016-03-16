@@ -725,6 +725,7 @@ a:hover, a:active, a:visited, a:focus {
 
 #descargas-content ul li img {
 	width: 100%;
+	vertical-align: top;
 }
 
 #smart-download {
