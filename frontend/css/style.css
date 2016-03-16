@@ -1333,7 +1333,7 @@ a:hover, a:active, a:visited, a:focus {
 	margin-right: 15px;
 }
 
-#concursos .redes .icon {
+.icon {
 	width: 45px;
 	height: 51px;
 	display: inline-block;
@@ -1342,11 +1342,11 @@ a:hover, a:active, a:visited, a:focus {
 	transition: background-position .15s;
 }
 
-#concursos .redes .icon.facebook {
+.icon.facebook {
 	background: url(../img/concursos/facebook.png);
 }
 
-#concursos .redes .icon:hover {
+.icon:hover {
 	background-position: 0px -51px;
 }
 

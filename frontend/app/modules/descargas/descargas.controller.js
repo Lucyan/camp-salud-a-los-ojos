@@ -13,18 +13,22 @@ saludalosojos.controller('descargas.controller', function($scope, $window) {
 	var smart = [
 		{
 			url: 'img/descargas/smart/wallpapers/Mobile-wallpapers-1.jpg',
+			download: 'img/descargas/smart/download/Mobile-wallpapers-1.jpg',
 			name: 'Mobile-wallpapers-1.jpg'
 		},
 		{
 			url: 'img/descargas/smart/wallpapers/Mobile-wallpapers-2.jpg',
+			download: 'img/descargas/smart/download/Mobile-wallpapers-2.jpg',
 			name: 'Mobile-wallpapers-2.jpg'
 		},
 		{
 			url: 'img/descargas/smart/wallpapers/Mobile-wallpapers-3.jpg',
+			download: 'img/descargas/smart/download/Mobile-wallpapers-3.jpg',
 			name: 'Mobile-wallpapers-3.jpg'
 		},
 		{
 			url: 'img/descargas/smart/wallpapers/Mobile-wallpapers-4.jpg',
+			download: 'img/descargas/smart/download/Mobile-wallpapers-4.jpg',
 			name: 'Mobile-wallpapers-4.jpg'
 		}
 	]
