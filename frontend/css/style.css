@@ -957,7 +957,7 @@ a:hover, a:active, a:visited, a:focus {
 	}
 
 	#descargas-content .control .boton {
-		opacity: 1 !important;
+		opacity: .5 !important;
 	}
 }
 
