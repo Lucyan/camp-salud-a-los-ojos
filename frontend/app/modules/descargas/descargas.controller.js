@@ -3,6 +3,11 @@ saludalosojos.controller('descargas.controller', function($scope, $window, $http
 
 	var $window = angular.element($window);
 
+	$scope.controlMovil = true;
+	if ($window.width() < 768) {
+		$scope.controlMovil = false;
+	}
+
 	if ($window.width() < 768)
 		$scope.imgCalendar = 'img/descargas/calendar-movil.png';
 	else

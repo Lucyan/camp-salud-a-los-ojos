@@ -9,9 +9,9 @@
 		</div>
 		<img src="img/descargas/smart/phone.png" class="phone hidden-xs">
 	</div>
-	<div class="control text-left hidden-xs">
-		<div class="boton" ng-click="prevPage();" ng-disabled="page < 2"></div>
-		<div class="pull-right boton right" ng-click="nextPage();" ng-disabled="page >= imageList.length"></div>
+	<div class="control text-left">
+		<div class="boton" ng-click="prevPage();" ng-disabled="page < 2" ng-show="page === 1 || controlMovil"></div>
+		<div class="pull-right boton right" ng-click="nextPage();" ng-disabled="page >= imageList.length" ng-show="page === imageList.length || controlMovil"></div>
 	</div>
 	<div class="paging hidden-xs">
 		<img ng-repeat="n in range(1, imageList.length)" src="img/descargas/pin.png" ng-class="{active: n == page}" ng-click="goPage(n)">

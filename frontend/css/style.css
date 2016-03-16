@@ -884,6 +884,7 @@ a:hover, a:active, a:visited, a:focus {
 	#descargas-content .celular .mascara {
 		padding-top: 0px;
 		margin: 0px auto;
+		z-index: 66999;
 	}
 
 	#descargas-content .celular .paging {
@@ -904,6 +905,10 @@ a:hover, a:active, a:visited, a:focus {
 	#descargas .btn {
 		float: initial !important;
 		margin: 0px;
+	}
+
+	#descargas-content .include-content {
+		width: 100%;
 	}
 
 	#descargas-content .include-content.cal {
@@ -944,6 +949,15 @@ a:hover, a:active, a:visited, a:focus {
 
 	#descargas-content .include-content > * {
 		display: block;
+	}
+
+	#descargas-content .control {
+		padding: 0 20px;
+		z-index: 66000;
+	}
+
+	#descargas-content .control .boton {
+		opacity: 1 !important;
 	}
 }
 
