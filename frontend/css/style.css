@@ -586,6 +586,18 @@ a:hover, a:active, a:visited, a:focus {
 	vertical-align: bottom;
 }
 
+#menu-descargas li.smart img {
+	width: 66px;
+}
+
+#menu-descargas li.note img {
+	width: 56px;
+}
+
+#menu-descargas li.calendar img {
+	width: 77px;
+}
+
 #descargas-content {
 	position: relative;
 	margin-top: 20px;

@@ -1,15 +1,15 @@
 <div id="descargas" class="text-center">
 	<div>
 		<ul id="menu-descargas">
-			<li ng-click="option_active = 'smart'" ng-switch on="option_active">
+			<li ng-click="option_active = 'smart'" ng-switch on="option_active" class="smart">
 				<img ng-switch-when="smart" src="img/descargas/menu/smart-on.png" />
 				<img ng-switch-default src="img/descargas/menu/smart-off.png" />
 			</li>
-			<li ng-click="option_active = 'note'" ng-switch on="option_active" class="hidden-xs">
+			<li ng-click="option_active = 'note'" ng-switch on="option_active" class="hidden-xs note">
 				<img ng-switch-when="note" src="img/descargas/menu/note-on.png" />
 				<img ng-switch-default src="img/descargas/menu/note-off.png" />
 			</li>
-			<li ng-click="option_active = 'calendar'" ng-switch on="option_active">
+			<li ng-click="option_active = 'calendar'" ng-switch on="option_active" class="calendar">
 				<img ng-switch-when="calendar" src="img/descargas/menu/calendar-on.png" />
 				<img ng-switch-default src="img/descargas/menu/calendar-off.png" />
 			</li>
