@@ -1033,6 +1033,7 @@ a:hover, a:active, a:visited, a:focus {
 	font-size: 10px;
 }
 
+#modelos .thumbnails ul li.compartir,
 #modelos .thumbnails ul li.modelo-thumbnail:hover, #modelos .thumbnails ul li.modelo-thumbnail.active {
 	opacity: 1;
 }
@@ -1340,6 +1341,7 @@ a:hover, a:active, a:visited, a:focus {
 	background: url(../img/concursos/twitter.png);
 	background-position: 0px 0px;
 	transition: background-position .15s;
+	vertical-align: middle;
 }
 
 .icon.facebook {
