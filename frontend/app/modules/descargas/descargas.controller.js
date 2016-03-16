@@ -37,7 +37,7 @@ saludalosojos.controller('descargas.controller', function($scope, $window, $http
 
 	var note = [
 		{
-			url: 'img/descargas/note/wallpapers/1024x768/Chicas-campanario-1024x768.jpg',
+			url: 'img/descargas/note/wallpapers/note/Notebook-descargas-all.jpg',
 			name: 'Chicas-campanario.jpg',
 			download: {
 				url1920: 'img/descargas/note/wallpapers/1920x1080/Chicas-campanario-1920x1080.jpg',
