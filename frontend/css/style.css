@@ -45,6 +45,11 @@ a:hover, a:active, a:visited, a:focus {
 	color: #fff;
 }
 
+
+.loader {
+	margin-top: 10%;
+}
+
 .hexagon {
 	position: relative;
 	width: 26px; 
