@@ -130,6 +130,12 @@ a:hover, a:active, a:visited, a:focus {
 	animation: fadeOut .5s;
 }
 
+@media screen and (max-width: 767px) {
+	#principal .animate-views {
+		height: initial;
+	}
+}
+
 
 /*BG video*/
 
