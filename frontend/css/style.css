@@ -132,7 +132,8 @@ a:hover, a:active, a:visited, a:focus {
 
 @media screen and (max-width: 767px) {
 	#principal .animate-views {
-		height: initial;
+		height: auto;
+		min-height: 100%;
 	}
 }
 
@@ -1422,6 +1423,7 @@ a:hover, a:active, a:visited, a:focus {
 		padding-top: 25%;
 		height: auto;
 		min-height: 100%;
+		position: relative;
 	}
 
 	#concursos > * {
@@ -1441,6 +1443,7 @@ a:hover, a:active, a:visited, a:focus {
 
 	#concursos .side .redes {
 		margin-top: 30px;
+		padding-bottom: 20px;
 	}
 
 	#concursos .side .redes, #concursos .side p {
