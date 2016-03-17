@@ -501,6 +501,8 @@ a:hover, a:active, a:visited, a:focus {
 		background: url(../img/redes/youtube-movil.png);
 		width: 32px;
 		height: 36px;
+		transition: inherit;
+		background-position: 0px 0px;
 	}
 
 	#menu .redes a.twitter .icon {
@@ -509,6 +511,10 @@ a:hover, a:active, a:visited, a:focus {
 
 	#menu .redes a.facebook .icon {
 		background: url(../img/redes/facebook-movil.png);
+	}
+
+	#menu .redes a .icon:hover {
+		background-position: 32px 0px;
 	}
 }
 
