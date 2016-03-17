@@ -134,7 +134,6 @@ a:hover, a:active, a:visited, a:focus {
 	#principal .animate-views {
 		height: auto;
 		min-height: 100%;
-		position: relative;
 	}
 }
 
@@ -235,7 +234,7 @@ a:hover, a:active, a:visited, a:focus {
 		margin-top: 0px;
 		background: url(../img/home/bg-movil.png);
 		background-size: cover;
-		height: 100%;
+		min-height: 100%;
 		position: absolute;
 	}
 
