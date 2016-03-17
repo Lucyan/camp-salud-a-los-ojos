@@ -89,12 +89,13 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 	}
 
 	window.addEventListener("orientationchange", function() {
-		// Announce the new orientation number
-		if (window.orientation == 0 || window.orientation == 180) {
+		if (angular.element($window).height() > angular.element($window).width()) {
 			$rootScope.view_video = false;
 		} else {
 			$rootScope.view_video = 'landscape';
 		}
+
+		$rootScope.$apply();
 
 	}, false);
 }]);
