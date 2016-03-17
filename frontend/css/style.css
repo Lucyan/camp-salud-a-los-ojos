@@ -235,6 +235,7 @@ a:hover, a:active, a:visited, a:focus {
 		background: url(../img/home/bg-movil.png);
 		background-size: cover;
 		height: 100%;
+		position: absolute;
 	}
 
 	#agegate img {
@@ -248,8 +249,14 @@ a:hover, a:active, a:visited, a:focus {
 		margin-right: -15px;
 	}
 
+	#agegate .container {
+		position: absolute;
+		z-index: 88333;
+	}
+
 	#agegate .footer-movil {
 		display: block;
+		z-index: 88222;
 	}
 }
 
