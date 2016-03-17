@@ -90,6 +90,11 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 
 	window.addEventListener("orientationchange", function() {
 		// Announce the new orientation number
-		alert(window.orientation);
+		if (window.orientation == 0) {
+			$rootScope.view_video = false;
+		} else {
+			$rootScope.view_video = 'landscape';
+		}
+		
 	}, false);
 }]);

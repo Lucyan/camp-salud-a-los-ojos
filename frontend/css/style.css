@@ -388,7 +388,7 @@ a:hover, a:active, a:visited, a:focus {
 	background-position: 34px 0px;
 }
 
-#menu img.logo {
+img.logo {
 	max-width: 117px;
 }
 
@@ -1456,4 +1456,19 @@ a:hover, a:active, a:visited, a:focus {
 	#concursos .side .redes, #concursos .side p {
 		text-align: center;
 	}
+}
+
+/* Landscape mode */
+
+#landscape {
+	background-color: #D61E19;
+	padding: 13% 20px 20px;
+}
+
+#landscape .logo {
+	margin-bottom: 40px;
+}
+
+#landscape p {
+	font-size: 18px;
 }
