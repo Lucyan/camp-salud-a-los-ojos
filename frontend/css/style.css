@@ -134,6 +134,7 @@ a:hover, a:active, a:visited, a:focus {
 	#principal .animate-views {
 		height: auto;
 		min-height: 100%;
+		position: relative;
 	}
 }
 
@@ -1441,7 +1442,7 @@ img.logo {
 		padding-top: 25%;
 		height: auto;
 		min-height: 100%;
-		position: absolute;
+		position: relative;
 	}
 
 	#concursos > * {
