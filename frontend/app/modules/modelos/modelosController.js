@@ -155,7 +155,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 		}
 	}
 
-	$scope.title = "hello world";
+	$scope.title = "Conoce a las chicas de nuestro calendario campanario 2016 y hagamos un %23Saludalosojos";
 
 	$scope.share = function($event) {
 		noclose = true;
