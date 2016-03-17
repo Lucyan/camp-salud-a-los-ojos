@@ -87,4 +87,6 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 	$scope.scrollImage = function($event) {
 		$scope.pageY = ($event.pageY * 100) / angular.element($window).height();
 	}
+
+	$scope.siteUrl = $location.protocol() + '://' + $location.host();
 }]);
