@@ -87,4 +87,9 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 	$scope.scrollImage = function($event) {
 		$scope.pageY = ($event.pageY * 100) / angular.element($window).height();
 	}
+
+	window.addEventListener("orientationchange", function() {
+		// Announce the new orientation number
+		alert(window.orientation);
+	}, false);
 }]);
