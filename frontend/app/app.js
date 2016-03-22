@@ -13,11 +13,11 @@ saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$
 
 	$rootScope.view_video = false;
 
-	Cookie.checkCookie({
-		error: function (){
-			$location.path("/agegate");
-		}
-	});
+	// Cookie.checkCookie({
+	// 	error: function (){
+	// 		$location.path("/agegate");
+	// 	}
+	// });
 
 	$scope.$on('$routeChangeStart', function(scope, next, current) {
 		if (next.$$route != undefined) {
