@@ -18,10 +18,10 @@ saludalosojos.config(['$routeProvider', '$locationProvider', function ($routePro
 		templateUrl: 'app/modules/descargas/descargas.template.html',
 		controller: 'descargas.controller'
 	})
-	.when('/concursos',
-	{
-		templateUrl: 'app/modules/concursos/concursos.template.html'
-	})
+	// .when('/concursos',
+	// {
+	// 	templateUrl: 'app/modules/concursos/concursos.template.html'
+	// })
 	.when('/galeria',
 	{
 		templateUrl: 'app/modules/modelos/modelos.template.html',
