@@ -1,0 +1,792 @@
+body.mobile .bg-video {
+	display: none;
+}
+
+/* Agegate Mobile*/
+
+body.mobile #agegate section .choice {
+	text-align: center!important;
+	margin-bottom: 20px;
+}
+
+body.mobile #agegate {
+	padding: 20px 20px;
+	padding-top: 127px;
+	margin-top: 0px;
+	background: url(../img/home/bg-movil.png);
+	background-size: cover;
+	min-height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+body.mobile #agegate img {
+	width: auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+body.mobile #agegate section p {
+	margin-bottom: 40px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+body.mobile #agegate .container {
+	position: absolute;
+	z-index: 88333;
+}
+
+body.mobile #agegate .footer-movil {
+	display: block;
+	z-index: 88222;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	body.mobile #agegate section p,
+	body.mobile #agegate .choice a,
+	body.mobile #agegate .choice button {
+		font-size: 2em;
+	}
+}
+
+
+/* Home Footer - Site Footer */
+
+body.mobile #home-footer {
+	display: none;
+}
+
+body.mobile #site-footer {
+	display: none;
+}
+
+/* Menú Mobile */
+
+body.mobile #menu {
+	background-color: #D61E19;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	transition: left .3s;
+}
+
+body.mobile  #menu.open {
+	left: 0;
+}
+
+body.mobile  #menu .top-menu {
+	position: fixed;
+	top: 20px;
+	left: 10px;
+	width: 100%;
+}
+
+body.mobile  #menu img.logo {
+	display: block;
+	margin: 0 auto;
+}
+
+body.mobile  #menu .movil-icon {
+	display: block;
+}
+
+body.mobile  #menu.open .movil-icon {
+	background-position: 0px 0px;
+}
+
+body.mobile  #menu .options {
+	margin-top: 70px;
+	max-height: initial !important;
+}
+
+body.mobile  #menu ul {
+	padding-left: 70px;
+	margin-top: 10px;
+}
+
+body.mobile  #menu ul li {
+	margin-bottom: 30px;
+}
+
+body.mobile  #menu ul li.active a {
+	text-decoration: underline;
+}
+
+body.mobile  #menu ul li:before {
+	content: url(../img/menu/icons/home.png);
+	left: -50px;
+	top: -10px;
+	position: absolute;
+}
+
+body.mobile  #menu ul li:hover:before, body.mobile  #menu ul li.active:before {
+	content: url(../img/menu/icons/home-active.png);
+}
+
+body.mobile  #menu ul li.galeria:before {
+	content: url(../img/menu/icons/galeria.png);
+}
+
+body.mobile  #menu ul li.galeria:hover:before, body.mobile  #menu ul li.galeria.active:before {
+	content: url(../img/menu/icons/galeria-active.png);
+}
+
+body.mobile  #menu ul li.video:before {
+	content: url(../img/menu/icons/video.png);
+}
+
+body.mobile  #menu ul li.video:hover:before, body.mobile  #menu ul li.video.active:before {
+	content: url(../img/menu/icons/video-active.png);
+}
+
+body.mobile  #menu ul li.making:before {
+	content: url(../img/menu/icons/making.png);
+}
+
+body.mobile  #menu ul li.making:hover:before, body.mobile  #menu ul li.making.active:before {
+	content: url(../img/menu/icons/making-active.png);
+}
+
+body.mobile  #menu ul li.descargas:before {
+	content: url(../img/menu/icons/descargas.png);
+}
+
+body.mobile  #menu ul li.descargas:hover:before, body.mobile  #menu ul li.descargas.active:before {
+	content: url(../img/menu/icons/descargas-active.png);
+}
+
+body.mobile  #menu ul li.concursos:before {
+	content: url(../img/menu/icons/concursos.png);
+}
+
+body.mobile  #menu ul li.concursos:hover:before, body.mobile  #menu ul li.concursos.active:before {
+	content: url(../img/menu/icons/concursos-active.png);
+}
+
+body.mobile  #menu .redes {
+	position: absolute;
+	left: 0px;
+	bottom: 20px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+body.mobile  #menu .redes a {
+	margin: 0 10px;
+}
+
+body.mobile  #menu .redes a .icon {
+	background: url(../img/redes/youtube-movil.png);
+	width: 32px;
+	height: 36px;
+	transition: inherit;
+	background-position: 0px 0px;
+}
+
+body.mobile  #menu .redes a.twitter .icon {
+	background: url(../img/redes/twitter-movil.png);
+}
+
+body.mobile  #menu .redes a.facebook .icon {
+	background: url(../img/redes/facebook-movil.png);
+}
+
+body.mobile  #menu .redes a .icon:hover {
+	background-position: 32px 0px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	body.mobile #menu .logo {
+		max-width: 100%;
+	}
+
+	body.mobile #menu .movil-icon {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 68px;
+		height: 66px;
+		background: url(../img/menu/movil-icon2x.png);
+		background-position: 68px 0px;
+	}
+
+	body.mobile  #menu .redes a .icon {
+		background: url(../img/redes/youtube-tablet.png);
+		width: 64px;
+		height: 72px;
+		transition: inherit;
+		background-position: 0px 0px;
+	}
+
+	body.mobile  #menu .redes a.twitter .icon {
+		background: url(../img/redes/twitter-tablet.png);
+	}
+
+	body.mobile  #menu .redes a.facebook .icon {
+		background: url(../img/redes/facebook-tablet.png);
+	}
+
+	body.mobile #menu ul {
+    	padding-left: 100px;
+    	margin-top: 50px;
+	}
+
+	body.mobile #menu ul li {
+		margin-bottom: 60px;
+	}
+
+	body.mobile  #menu ul li a{
+		font-size: 2em;
+		margin-left: 50px;
+	}
+
+	body.mobile  #menu ul li:before {
+		content: url(../img/menu/icons/tablet/home.png);
+		left: -50px;
+		top: -15px;
+		position: absolute;
+	}
+
+	body.mobile  #menu ul li:hover:before, body.mobile  #menu ul li.active:before {
+		content: url(../img/menu/icons/tablet/home-active.png);
+	}
+
+	body.mobile  #menu ul li.galeria:before {
+		content: url(../img/menu/icons/tablet/galeria.png);
+	}
+
+	body.mobile  #menu ul li.galeria:hover:before, body.mobile  #menu ul li.galeria.active:before {
+		content: url(../img/menu/icons/tablet/galeria-active.png);
+	}
+
+	body.mobile  #menu ul li.video:before {
+		content: url(../img/menu/icons/tablet/video.png);
+	}
+
+	body.mobile  #menu ul li.video:hover:before, body.mobile  #menu ul li.video.active:before {
+		content: url(../img/menu/icons/tablet/video-active.png);
+	}
+
+	body.mobile  #menu ul li.making:before {
+		content: url(../img/menu/icons/tablet/making.png);
+	}
+
+	body.mobile  #menu ul li.making:hover:before, body.mobile  #menu ul li.making.active:before {
+		content: url(../img/menu/icons/tablet/making-active.png);
+	}
+
+	body.mobile  #menu ul li.descargas:before {
+		content: url(../img/menu/icons/tablet/descargas.png);
+	}
+
+	body.mobile  #menu ul li.descargas:hover:before, body.mobile  #menu ul li.descargas.active:before {
+		content: url(../img/menu/icons/tablet/descargas-active.png);
+	}
+
+	body.mobile  #menu ul li.concursos:before {
+		content: url(../img/menu/icons/tablet/concursos.png);
+	}
+
+	body.mobile  #menu ul li.concursos:hover:before, body.mobile  #menu ul li.concursos.active:before {
+		content: url(../img/menu/icons/tablet/concursos-active.png);
+	}
+}
+
+/* 404 */
+
+#template404 {
+	width: 100%;
+	height: 100%;
+	background: url(../img/404/bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: #DC0E0D;
+	position: absolute;
+	font-family: Verdana;
+	font-size: 26px;
+}
+
+#template404 .content {
+	margin-top: 100px;
+}
+
+#template404 .content > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#template404 .content .text {
+	margin-left: 40px;
+}
+
+#template404 .content .text span {
+	font-size: 90px;
+	font-weight: bold;
+}
+
+
+/* Descargas */
+
+body.mobile #descargas {
+	padding-top: 80px;
+	min-height: 100%;
+	height: auto;
+}
+
+body.mobile #descargas .hidden-xs {
+	display: none;
+}
+
+body.mobile #descargas .btn {
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+body.mobile #descargas-content .list-content {
+	overflow: initial;
+}
+
+body.mobile #descargas-content .celular {
+	height: 83%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+body.mobile #descargas-content .celular .mascara {
+	padding-top: 0px;
+	margin: 0px auto;
+	z-index: 66999;
+}
+
+body.mobile #descargas-content .celular .paging {
+	bottom: 12%;
+}
+
+body.mobile #descargas-content ul li img {
+	width: 90%;
+}
+
+body.mobile #smart-download {
+	margin: 0 auto;
+	text-align: center;
+	display: block !important;
+	width: 100%;
+}
+
+body.mobile #descargas .btn {
+	float: initial !important;
+	margin: 0px;
+}
+
+body.mobile #descargas-content .include-content {
+	width: 100%;
+}
+
+body.mobile #descargas-content .include-content.cal {
+	width: 100%;
+}
+
+body.mobile #descargas-content .include-content.cal .calendar {
+	width: 100%;
+	text-align: left;
+	overflow: auto;
+	padding-top: 1px;
+	margin-top: -1px;
+}
+
+body.mobile #descargas-content .include-content.cal .calendar img {
+	display: inline-block;
+	margin-top: -50px;
+	width: initial;
+}
+
+body.mobile #descargas-content .include-content.cal .calendar .info {
+	display: inline-block;
+}
+
+body.mobile #descargas-content .include-content.cal #smart-download {
+	margin-top: 20px;
+}
+
+body.mobile #send-email {
+	display: block !important;
+}
+
+body.mobile #descargas-content .animate-descargas {
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+body.mobile #descargas-content .include-content > * {
+	display: block;
+}
+
+body.mobile #descargas-content .control {
+	padding: 0 20px;
+	z-index: 66000;
+}
+
+body.mobile #descargas-content .control .boton {
+	opacity: .5 !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	body.mobile #descargas p,
+	body.mobile #descargas button,
+	body.mobile #descargas a,
+	body.mobile #descargas input {
+		font-size: 2em;
+	}
+
+	body.mobile #descargas-content .celular {
+		height: 78%;
+	}
+
+	body.mobile #descargas input {
+		height: 80px;
+	}
+
+	body.mobile #descargas {
+		padding-top: 120px;
+	}
+
+	body.mobile #menu-descargas li.smart img {
+		width: 132px;
+	}
+
+	body.mobile #menu-descargas li.calendar img {
+		width: 154px;
+	}
+
+	body.mobile #menu-descargas li {
+		height: 154px;
+		padding-top: 30px;
+	}
+}
+
+
+/* Modelos */
+
+body.mobile	#modelos .modelo .modelo-container .img img {
+	margin-top: 0px!important;
+}
+
+body.mobile #modelos .modelo .control {
+	top: auto;
+	bottom: 30px;
+}
+
+body.mobile #modelos .modelo .control.left {
+	left: 20px;
+}
+
+body.mobile #modelos .modelo .control.right {
+	right: 20px;
+}
+
+body.mobile #modelos .thumbnails {
+	position: absolute;
+    bottom: 0px;
+    top: auto;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+body.mobile #modelos .thumbnails.open {
+	top: 0px;
+	background: rgba(0,0,0,0.75);
+	z-index: 99999;
+}
+
+body.mobile #modelos .thumbnails ul {
+	padding: 0px;
+	margin: auto;
+	margin-bottom: 0px;
+	position: absolute;
+	bottom: 30px;
+	left: -57px;
+	right: 0px;
+	width: 50px;
+}
+
+body.mobile li.compartir {
+	display: none;
+}
+
+body.mobile #modelos .share-mobile {
+	position: absolute;
+	bottom: 30px;
+	left: 70px;
+	right: 0px;
+	margin: auto;
+	width: 37px;
+	height: 43px;
+	display: block!important;
+}
+
+body.mobile #modelos .modelo .modelo-container {
+	overflow-y: auto;
+}
+
+body.mobile #modelos .thumbnails ul li {
+	text-align: center;
+}
+
+body.mobile #modelos .thumbnails ul li.modelo-thumbnail {
+	margin: 0px!important;
+	position: absolute;
+	bottom: 0px;
+}
+
+body.mobile #modelos .thumbnails ul li.modelo-thumbnail:hover img {
+	box-shadow: none;
+}
+
+body.mobile #modelos .thumbnails ul li.modelo-thumbnail img {
+	border: 2px solid #fff!important;
+	margin: 0px!important;
+}
+
+body.mobile #modelos .thumbnails ul li.modelo-thumbnail.active {
+	z-index: 4;
+}
+
+body.mobile #modelos .thumbnails ul li.modelo-thumbnail.no-active.index-1 {
+	z-index: 3;
+	bottom: 5px;
+	left: -5px;
+}
+
+body.mobile #modelos .thumbnails ul li.modelo-thumbnail.no-active.index-2 {
+	z-index: 2;
+	bottom: 10px;
+	left: -10px;
+}
+
+body.mobile #modelos .thumbnails ul li.modelo-thumbnail.no-active.index-3 {
+	z-index: 1;
+	bottom: 15px;
+	left: -15px;
+}
+
+body.mobile #modelos .thumbnails.open ul li.modelo-thumbnail {
+	left: 0px!important;
+}
+
+body.mobile #modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-1 {
+	bottom: 64px;
+}
+
+body.mobile #modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-2 {
+	bottom: 124px;
+}
+
+body.mobile #modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-3 {
+	bottom: 184px;
+}
+
+body.mobile .modal-compartir-modelo img{
+	display: none;
+}
+
+body.mobile .modal-compartir-modelo .box {
+	padding: 0px 15px;
+}
+
+body.mobile .modal-compartir-modelo .box span {
+	display: block;
+	margin-bottom: 15px;
+}
+
+body.mobile .modal-compartir-modelo .box a{
+	margin-right: 20px;
+	margin-left: 0px;
+}
+
+body.mobile .modal-compartir-modelo .box a.facebook {
+	margin-right: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	body.mobile #modelos .modelo .control {
+	    height: 86px;
+	    width: 74px;
+	}
+
+	body.mobile #modelos .modelo .control.left .btn-control {
+	    background: url(../modelos/cleft-tablet.png);
+	    background-position: 0px 0px;
+	}
+
+	body.mobile #modelos .modelo .control.right .btn-control {
+	    background: url(../modelos/cright-tablet.png);
+	    background-position: 0px 0px;
+	}
+
+	body.mobile #modelos .modelo .control .btn-control:hover {
+		background-position: -74px 0px;
+	}
+
+	body.mobile #modelos .thumbnails ul {
+		left: -114px;
+		width: 100px;
+	}
+
+	body.mobile #modelos .thumbnails li img{
+		display: none;
+	}
+
+	body.mobile #modelos .thumbnails li img.thumbnail-tablet {
+		display: block!important;
+	}
+
+	body.mobile #modelos .thumbnails ul li.modelo-thumbnail.active {
+		z-index: 4;
+	}
+
+	body.mobile #modelos .thumbnails ul li.modelo-thumbnail.no-active.index-1 {
+		z-index: 3;
+		bottom: 10px;
+		left: -10px;
+	}
+
+	body.mobile #modelos .thumbnails ul li.modelo-thumbnail.no-active.index-2 {
+		z-index: 2;
+		bottom: 20px;
+		left: -20px;
+	}
+
+	body.mobile #modelos .thumbnails ul li.modelo-thumbnail.no-active.index-3 {
+		z-index: 1;
+		bottom: 30px;
+		left: -30px;
+	}
+
+	body.mobile #modelos .thumbnails.open ul li.modelo-thumbnail {
+		left: 0px!important;
+	}
+
+	body.mobile #modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-1 {
+		bottom: 128px;
+	}
+
+	body.mobile #modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-2 {
+		bottom: 248px;
+	}
+
+	body.mobile #modelos .thumbnails.open ul li.modelo-thumbnail.no-active.index-3 {
+		bottom: 368px;
+	}
+
+	body.mobile #modelos .share-mobile {
+		left: 140px;
+		width: 74px;
+		height: 86px;
+	}
+
+	body.mobile #modelos .share-mobile img {
+		display: none;
+	}
+
+	body.mobile #modelos .share-mobile img.share-tablet {
+		display: block!important;
+	}
+
+	body.mobile .modal-compartir-modelo {
+		font-size: 2em;
+	}
+}
+
+
+/* Videos */
+
+body.mobile #videos .close {
+	opacity: 1;
+	font-size: 40px;
+}
+
+/* Concursos */
+
+body.mobile #concursos {
+	padding-top: 25%;
+	height: auto;
+	min-height: 100%;
+	position: relative;
+}
+
+body.mobile #concursos > * {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+body.mobile #concursos .imagen {
+	width: 84%;
+}
+
+body.mobile #concursos .side {
+	margin-top: 25%;
+	padding: 0 10px;
+}
+
+body.mobile #concursos .side .redes {
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+
+body.mobile #concursos .side .redes, #concursos .side p {
+	text-align: center;
+}
+
+body.mobile #concursos .imagen img.gif.movil {
+	display: block;
+}
+
+body.mobile #concursos .side .linea, 
+body.mobile #concursos .gif {
+	display: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	body.mobile #concursos {
+		padding-top: 150px;
+	}
+
+	body.mobile #concursos .imagen {
+    	width: 65%;
+    	margin: auto;
+	}
+
+	body.mobile #concursos .side {
+		margin-top: 80px;
+	}
+
+	body.mobile #concursos .side p {
+		font-size: 2em;
+	}
+
+	body.mobile .icon {
+		width: 90px;
+		height: 102px;
+		background: url(../img/concursos/tablet/twitter.png);
+		background-position: 0px 0px;
+	}
+
+	body.mobile .icon.facebook {
+		background: url(../img/concursos/tablet/facebook.png);
+	}
+
+	body.mobile .icon:hover {
+		background-position: 0px -102px;
+	}
+}

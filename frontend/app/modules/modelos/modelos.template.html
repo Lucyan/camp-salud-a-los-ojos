@@ -23,6 +23,7 @@
 			<li ng-repeat="value in modelos track by $index" class="modelo-thumbnail" class-modelos mainmodelo="value.modelo" modelo="modelo">
 				<a ng-href="/galeria/{{value.modelo}}" ng-click="selectThumbnail($event)">
 					<img ng-src="{{value.thumbnail}}" />
+					<img ng-src="{{value.thumbnailTablet}}" class="hidden thumbnail-tablet" />
 				</a>
 			</li>
 			<li class="compartir hidden-xs">
@@ -36,6 +37,7 @@
 	<div class="hidden-md hidden-sm hidden-lg share-mobile">
 		<a href="#" ng-click="openmodal()">
 			<img src="img/share/share.png"  />
+			<img src="img/share/tablet/share.png" class="hidden share-tablet" />
 		</a>
 	</div>
 

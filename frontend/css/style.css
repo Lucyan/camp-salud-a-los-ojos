@@ -236,6 +236,7 @@ a:hover, a:active, a:visited, a:focus {
 		background-size: cover;
 		min-height: 100%;
 		position: absolute;
+		width: 100%;
 	}
 
 	#agegate img {
@@ -272,6 +273,7 @@ a:hover, a:active, a:visited, a:focus {
     padding-top: 37%;
 	z-index: 87333;
 }
+
 
 /* Site Footer */
 

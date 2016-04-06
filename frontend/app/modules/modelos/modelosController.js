@@ -1,4 +1,4 @@
-saludalosojos.controller("modelosController", function ($scope, $location, $routeParams, $window, $timeout) {
+saludalosojos.controller("modelosController", function ($scope, $location, $routeParams, $window, $timeout, $rootScope) {
 
 	var timeID = null;
 
@@ -20,6 +20,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				"modelos/mariana/3.jpg"
 			],
 			thumbnail : "modelos/thumbnails/1.png",
+			thumbnailTablet : "modelos/thumbnails/tablet/1.png",
 			"modelo" : "mariana"
 		},
 		{
@@ -29,6 +30,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				"modelos/ivana/3.jpg"
 			],
 			thumbnail : "modelos/thumbnails/2.png",
+			thumbnailTablet : "modelos/thumbnails/tablet/2.png",
 			modelo: "ivana"
 		},
 		{
@@ -38,6 +40,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				"modelos/lupe/3.jpg"
 			],
 			thumbnail : "modelos/thumbnails/3.png",
+			thumbnailTablet : "modelos/thumbnails/tablet/3.png",
 			modelo: "lupe"
 		},
 		{
@@ -47,6 +50,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 				"modelos/dumi/3.jpg"
 			],
 			thumbnail : "modelos/thumbnails/4.png",
+			thumbnailTablet : "modelos/thumbnails/tablet/4.png",
 			modelo: "dumi"
 		}
 	];
@@ -75,8 +79,10 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 		scrollImage(newValue);
 	});
 
-	var scrollImage = function (pageY) {
-		if (angular.element($window).width() > 767) {
+	var scrollImage = function (pageY) {		
+
+		if (angular.element($window).width() > 767 && !$rootScope.mobile) {
+
 			var imgHeight = $('#modelos .img-modelo').height() - angular.element($window).height();
 			if (imgHeight > 0) {
 				if (pageY < 60) {
@@ -170,7 +176,7 @@ saludalosojos.controller("modelosController", function ($scope, $location, $rout
 
 	$scope.selectThumbnail = function ($event) {
 		var window_width = angular.element($window).width();
-		if (window_width < 768) {
+		if (window_width < 768 || $rootScope.mobile) {
 			noclosethumbnail = true;
 			$timeout(function () {
 				noclosethumbnail = false;

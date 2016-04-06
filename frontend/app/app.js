@@ -1,12 +1,15 @@
 'use strict';
 
-var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap", "ngAnimate", "ngTouch"]);
+var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap", "ngAnimate", "ngTouch", "ng.deviceDetector"]);
 
 /**
  *  Main App Controller
  **/
 
-saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$location', '$sce', '$window', function ($scope, $rootScope, Cookie, $location, $sce, $window) {
+saludalosojos.controller('mainController', ['$scope', '$rootScope', 'Cookie', '$location', '$sce', '$window', 'deviceDetector', function ($scope, $rootScope, Cookie, $location, $sce, $window, deviceDetector) {
+
+
+	$rootScope.mobile = deviceDetector.isMobile();
 
 	var urlVideo = 'https://www.youtube.com/embed/FtAlhE5dMUA?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';
 	var urlMaking = 'https://www.youtube.com/embed/ELQxobMDZQM?autoplay=1&iv_load_policy=3&modestbranding=1&showinfo=0';

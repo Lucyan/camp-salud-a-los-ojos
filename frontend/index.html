@@ -38,11 +38,12 @@
 
     <!-- Application Styles -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylemobile.css" rel="stylesheet">
     <!-- / Application Styles -->
 
   </head>
 
-  <body ng-mousemove="scrollImage($event)">
+  <body ng-mousemove="scrollImage($event)" ng-class="{'mobile' : mobile}">
 
     <div id="fb-root"></div>
 
@@ -93,6 +94,11 @@
   <script src="lib/angular-route/angular-route.min.js"></script>
   <!-- / AngularJS -->
 
+  <!-- Angular Device Detector -->
+  <script src="lib/re-tree/re-tree.min.js"></script>
+  <script src="lib/ng-device-detector/ng-device-detector.min.js"></script>
+  <!-- / Angular Device Detector -->
+
 
   <!-- Angular Animate -->
   <script src="lib/angular-animate/angular-animate.min.js"></script>
@@ -141,9 +147,7 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ​
     ga('create', 'UA-49332307-3', 'none');
-  ​
   </script>
 
 </html>
