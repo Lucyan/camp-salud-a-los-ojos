@@ -8,7 +8,7 @@ saludalosojos.controller('descargas.controller', function($scope, $window, $http
 		$scope.controlMovil = false;
 	}
 
-	if ($window.width() < 768 || $rootScope.mobile)
+	if ($window.width() < 768)
 		$scope.imgCalendar = 'img/descargas/calendar-movil.png';
 	else
 		$scope.imgCalendar = 'img/descargas/calendar.png';
@@ -105,7 +105,7 @@ saludalosojos.controller('descargas.controller', function($scope, $window, $http
 				var originalMascaraWidth = 225;
 				var originalMascaraHeight = 481;
 
-				if ($window.width() < 768 || $rootScope.mobile) {
+				if ($window.width() < 768) {
 					var originalFotoWidht = 230;
 					$scope.imgCalendar = 'img/descargas/calendar-movil.png';
 				} else {
