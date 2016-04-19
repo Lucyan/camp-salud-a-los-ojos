@@ -32,6 +32,10 @@ saludalosojos.config(['$routeProvider', '$locationProvider', function ($routePro
 		templateUrl: 'app/modules/modelos/modelos.template.html',
 		controller: 'modelosController'
 	})
+	.when('/google9da779c2f31ba2e2.html',
+	{
+		templateUrl: 'google9da779c2f31ba2e2.html'
+	})
 	.when('/404',
 	{
 		templateUrl: 'app/modules/404/404.template.html'
