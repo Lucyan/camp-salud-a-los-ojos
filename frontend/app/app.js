@@ -1,6 +1,6 @@
 'use strict';
 
-var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap", "ngAnimate", "ngTouch", "ng.deviceDetector"]);
+var saludalosojos = angular.module("saludalosojosApp",["ngRoute","ui.bootstrap", "ngAnimate", "ngTouch", "ng.deviceDetector", "angulartics", "angulartics.google.analytics"]);
 
 /**
  *  Main App Controller
